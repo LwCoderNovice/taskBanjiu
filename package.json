@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "About gulp tools knowledge",
   "main": "gulpfile",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-file-include": "^2.1.0"
+  },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^4.0.0",
