@@ -37,7 +37,7 @@ gulp.task('fileinclude', function() {
 });
 // Copy the fonts to the ui folder.
 gulp.task('copyFonts', function() {
-    return gulp.src(['./src/source/fonts/**', './src/source/plugins/dist/fonts/**'])
+    return gulp.src(['./src/source/fonts/**', './src/source/plugins/bootstrap-3.3.7/fonts/**'])
     .pipe(gulp.dest('./_ui/fonts/'))
 })
 gulp.task('copyImages', function() {
@@ -100,9 +100,9 @@ gulp.task('js:plugins', function() {
 });
 // Watch TODO
 gulp.task('watch', function() {
-    gulp.watch('./src/source/less/*.less',  gulp.series('less:dev'));
+    gulp.watch(['./src/source/less/*.less', './src/source/less/**/*.less'],  gulp.series('less:dev'));
     gulp.watch('./src/source/js/**.js',  gulp.series('js:dev'));
-    gulp.watch(['./src/*.html', './src/pages/*.html'], gulp.series('fileinclude'));
+    gulp.watch(['./src/*.html', './src/pages/*.html', './src/_include/*.html'], gulp.series('fileinclude'));
 });
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
