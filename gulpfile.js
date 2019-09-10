@@ -102,6 +102,7 @@ gulp.task('js:plugins', function() {
 gulp.task('watch', function() {
     gulp.watch('./src/source/less/*.less',  gulp.series('less:dev'));
     gulp.watch('./src/source/js/**.js',  gulp.series('js:dev'));
+    gulp.watch(['./src/*.html', './src/pages/*.html'], gulp.series('fileinclude'));
 });
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
