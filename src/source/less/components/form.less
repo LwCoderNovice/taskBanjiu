@@ -1,12 +1,20 @@
 // Form ele styles
 
 input {
-	&.bj-default-input {
+	&[type='text'],
+	&[type='email'] {
 		border-radius: @border-radius;
-		padding: @padding-unit*2;
+		padding: @padding-unit !important;
+		height: 40px;
+	}
+	&.bj-default-input {
 		font-size: @fsize-default;
-		color: @color-blue-thin;
+		color: @color-blue-light;
 		background: @color-white;
+		border: none;
+	}
+	&.bj-primary-input {
+		background: @color-grey-light;
 		border: none;
 	}
 	&.border {

@@ -1,0 +1,49 @@
+header {
+  background: @color-primary;
+  color: @color-white;
+  padding: 15px 0 20px;
+  .header-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .header-logo {
+    max-width: 160px;
+    img {
+      width: 100%;
+    }
+  }
+  .header-pagetitle {
+    font-size: 16px;
+    padding-top: 17px;
+    margin-left: 10px;
+
+  }
+  nav {
+    display: flex;
+    &.menu {
+      justify-content: space-around;
+      ul {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        li {
+          margin-left: 15px;
+          a {
+            font-size: 16px;
+            &:hover {
+              color: @color-white;
+            }
+          }
+        }
+      }
+    }
+    &.header-actions {
+      margin-left: 20px;
+      display: flex;
+      width: 10%;
+      min-width: 100px;
+      justify-content: space-around;
+    }
+  }
+}

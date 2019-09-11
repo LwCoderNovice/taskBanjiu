@@ -14,6 +14,8 @@ var LessAutoprefix = require('less-plugin-autoprefix');
 var fileinclude = require('gulp-file-include');
 var autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
 
+// variable
+var JAVASCRIPT_PLUGINS = ['./src/source/plugins/jquery-3.4.1.min.js', './src/source/plugins/jquery.validate.min.js', './src/source/plugins/bootstrap-3.3.7/dist/js/bootstrap.min.js'];
 // function list
 
 // Clean the _ui folder.
@@ -92,10 +94,10 @@ gulp.task('js:pro', function() {
 });
 // Compression plugins js only
 gulp.task('js:plugins', function() {
-    return gulp.src(['./src/source/plugins/**.js','../src/source/plugins/bootstrap-3.3.7/dist/js/bootstrao.min.js' ])
+    return gulp.src(JAVASCRIPT_PLUGINS)
             .pipe(concat('plugins.js'))
             .pipe(uglify())
-            .pipe(rename('main.min.js'))
+            .pipe(rename('plugins.min.js'))
             .pipe(gulp.dest('./_ui/js'));
 });
 // Watch TODO
@@ -107,12 +109,12 @@ gulp.task('watch', function() {
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:pro', 'js:pro')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:pro', 'js:plugins', 'js:pro')
     )
 );
 // this the develop envirenments has maps
 gulp.task('dev', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:dev', 'js:dev')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:dev', 'js:plugins', 'js:dev')
     )
 );
