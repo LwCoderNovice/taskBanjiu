@@ -4,25 +4,49 @@
     @@include('_meta.html')
 </head>
 <body>
+    @@include('_header.html')
     <div class="full-container login-page">
-        <div class="container">
-            <div class="login-body">
-                <div class="login-logo">
-                    <img src="./images/header-logo-backhome-default@2x.png" />
-                </div>
-                <div class="login-form">
-                    <button class="btn btn-primary">密码登录</button>
-                    <button class="btn btn-primary">验证码登录</button>
-                    <div class="">
-                        <div class="form-group">
-                            <input type="text" class="bj-default-input border" placeholder="请输入您的用户名">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="请输入您的密码">
-                        </div>
+        <div class="login-body">
+            <div class="login-logo">
+                <img src="./images/header-logo-backhome-default@2x.png" />
+            </div>
+            <div class="login-form">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#passlogin" aria-controls="passlogin" role="tab" data-toggle="tab">密码登录</a></li>
+                    <li role="presentation"><a href="#codelogin" aria-controls="codelogin" role="tab" data-toggle="tab">验证码登录</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="passlogin">
+                        <form>
+                            <div class="form-group">
+                                <label class="sr-only" for="username">用户名</label>
+                                <input type="text" class="form-control bj-default-input" id="username" placeholder="请输入您的用户名">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="username">密码</label>
+                                <input type="password" class="form-control bj-default-input" id="username" placeholder="请输入密码">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">立即登录</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="codelogin">
+                        <form>
+                            <div class="form-group">
+                                <label class="sr-only" for="username">手机号</label>
+                                <input type="text" class="form-control bj-default-input" id="username" placeholder="请输入您的手机号">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="username">验证码</label>
+                                <input type="password" class="form-control bj-default-input" id="username" placeholder="请输入短信验证码">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">立即登录</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
