@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>register-icon-tips-d</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="注册完成" transform="translate(-910.000000, -220.000000)" fill-rule="nonzero">
+            <g id="register-icon-tips-d" transform="translate(910.000000, 220.000000)">
+                <rect id="Rectangle-Copy-3" fill="#6DCE38" x="0" y="0" width="100" height="100" rx="50"></rect>
+                <g id="Group-25" transform="translate(51.000000, 44.500000) rotate(-45.000000) translate(-51.000000, -44.500000) translate(26.000000, 28.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle" x="0" y="0" width="8.33333333" height="33" rx="4.16666667"></rect>
+                    <path d="M25,3.875 L25,3.875 C27.2781746,3.875 29.125,5.72182541 29.125,8 L29.125,49.75 C29.125,52.0281746 27.2781746,53.875 25,53.875 L25,53.875 C22.7218254,53.875 20.875,52.0281746 20.875,49.75 L20.875,8 C20.875,5.72182541 22.7218254,3.875 25,3.875 Z" id="Rectangle" transform="translate(25.000000, 28.875000) rotate(-270.000000) translate(-25.000000, -28.875000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
