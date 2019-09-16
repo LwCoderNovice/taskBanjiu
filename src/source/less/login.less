@@ -18,16 +18,65 @@
     align-items: center;
     .login-logo {
       max-width: 300px;
-      margin-right: 20px;
+      margin-right: 5%;
       >img {
         width: 100%;
       }
     }
     .login-form {
-      margin-left: 20px;
+      margin-left: 5%;
       background: @color-white;
       border-radius: 15px;
-      padding: 26px 40px;
+      padding: 2.4% 2.1%;
+      min-width: 18%;
+      width: 380px;
+      .nav-tabs {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 0;
+        margin-bottom: 30px;
+        >li {
+          min-width: 120px;
+          a {
+            border-color: @border-color;
+            border-radius: @border-radius;
+          }
+          &.active {
+            a {
+              background: @color-blue;
+              border-color: @color-blue;
+              color: @color-white;
+            }
+          }
+        }
+      }
+      .veri-label {
+        display: flex;
+        align-items: center;
+        img,
+        svg {
+          max-height: 45px;
+        }
+      }
+      .form-code {
+        position: relative;
+        .form-code-action {
+          position: absolute;
+          right: 0;
+          top: 5px;
+          background: @color-grey-light;
+          border: 0;
+          padding: 10px; 
+          color: @color-grey-darker;
+        }
+      }
+      input {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 25px 15px;
+        border: 0;
+        border-bottom: 1px solid @color-grey-min;
+      }
     }
   }
 }

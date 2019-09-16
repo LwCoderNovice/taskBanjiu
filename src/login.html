@@ -12,19 +12,29 @@
             </div>
             <div class="login-form">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#passlogin" class="btn btn-primary" aria-controls="passlogin" role="tab" data-toggle="tab">密码登录</a></li>
-                    <li role="presentation"><a href="#codelogin" class="btn btn-primary" aria-controls="codelogin" role="tab" data-toggle="tab">验证码登录</a></li>
+                    <li role="presentation" class="active"><a href="#passlogin" class="btn btn-default" aria-controls="passlogin" role="tab" data-toggle="tab">密码登录</a></li>
+                    <li role="presentation"><a href="#codelogin" class="btn btn-default" aria-controls="codelogin" role="tab" data-toggle="tab">验证码登录</a></li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="passlogin">
-                        <form>
+                        <form class="" id='loginForm'>
                             <div class="form-group">
                                 <label class="sr-only" for="username">用户名</label>
-                                <input type="text" class="form-control bj-default-input" id="username" placeholder="请输入您的用户名">
+                                <input type="text" class="form-control bj-default-input" name="username" id="username" placeholder="请输入您的用户名">
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="username">密码</label>
-                                <input type="password" class="form-control bj-default-input" id="username" placeholder="请输入密码">
+                                <input type="password" class="form-control bj-default-input" name="password" id="password" placeholder="请输入密码">
+                            </div>
+                            <div class="form-group row veri-label">
+                                <label class="sr-only control-label" for="username">验证码</label>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control bj-default-input col-xs-8" required id="username" placeholder="请输入验证码">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="./images/register-img-disabled@2x.png"/>
+                                </div>
+                                <a href="#" class="link-default col-xs-3">换一张</a>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block">立即登录</button>
@@ -32,14 +42,15 @@
                         </form>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="codelogin">
-                        <form>
+                        <form class="" id="phoneLoginForm" >
                             <div class="form-group">
-                                <label class="sr-only" for="username">手机号</label>
-                                <input type="text" class="form-control bj-default-input" id="username" placeholder="请输入您的手机号">
+                                <label class="sr-only" for="userphone">手机号</label>
+                                <input type="text" class="form-control bj-default-input" required id="userphone" placeholder="请输入您的手机号">
                             </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="username">验证码</label>
-                                <input type="password" class="form-control bj-default-input" id="username" placeholder="请输入短信验证码">
+                            <div class="form-group form-code">
+                                <label class="sr-only" for="userphonecode">验证码</label>
+                                <input type="text" class="form-control bj-default-input" required id="userphonecode" placeholder="请输入短信验证码">
+                                <button class="btn btn-default form-code-action">发送验证码</button>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block">立即登录</button>
