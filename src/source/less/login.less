@@ -53,9 +53,14 @@
       .veri-label {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         img,
         svg {
           max-height: 45px;
+        }
+        label.form-error {
+          flex: 0 0 100%;
+          padding-left: 20px;
         }
       }
       .form-code {
