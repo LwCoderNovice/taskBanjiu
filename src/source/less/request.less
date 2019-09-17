@@ -1,0 +1,35 @@
+.request-block {
+    border-radius: @border-radius;
+    background: @color-grey-light;
+    padding: 25px;
+    color: @color-primary;
+    .block-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: inherit;
+    }
+    .form-line {
+        display: flex;
+        align-items: center;
+        >.form-group {
+            flex: 0 0 45%;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            >label {
+                flex: 0 0 100px;
+                max-width: 100px;
+            }
+            >.col-sm-9,
+            >.col-sm-10 {
+                flex: auto;
+            }
+        }
+        .form-action {
+            flex: 0 0 10%;
+        }
+        .form-with {
+            flex: 0 0 90%;
+        }
+    }
+}
