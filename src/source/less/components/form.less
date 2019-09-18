@@ -20,6 +20,15 @@ input {
 	&.border {
 		border: @border-with-mini solid @border-color;
 	}
+	&.has-unit {
+		padding-right: 20px;
+		+ i {
+			position: absolute;
+			right: 25px;
+			top: 10px;
+			font-style: normal;
+		}
+	}
 }
 select {
 	&.bj-default-select {
