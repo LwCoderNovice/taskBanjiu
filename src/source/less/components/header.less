@@ -29,6 +29,26 @@ header {
         justify-content: flex-end;
         li {
           margin-left: 15px;
+          position: relative;
+          .sub-menu {
+            display: none;
+            position: absolute;
+            top: 20px;
+            padding: 35px 20px 20px;
+            background: @color-primary;
+            color: inherit;
+            width: 150px;
+            left: -10px;
+            border-radius: 2px;
+            >a {
+              display: block;
+              margin-bottom: 15px;
+              &:hover {
+                text-decoration: none;
+                color: @color-blue;
+              }
+            }
+          }
           a {
             font-size: 16px;
             &:hover {

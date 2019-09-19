@@ -1,9 +1,13 @@
 SELF.common = {
   _autoload: [
-    'bindCustomer'
+    'bindNav'
   ],
 
-  bindCustomer: function() {
-    
+  bindNav: function() {
+    $('.menu li').hover(function() {
+      $(this).find('.sub-menu').show();
+    }, function() {
+      $(this).find('.sub-menu').hide();
+    })
   }
 }
