@@ -1,0 +1,39 @@
+.bj-selector {
+  position: relative;
+  .bj-selector-handler {
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      position: absolute;
+      right: 5px;
+    }
+    &::before {
+      border-top-color: @color-blue-light;
+      bottom: 4px;
+    }
+    &::after {
+      top: 4px;
+      border-bottom-color: @color-blue-light;
+    }
+  }
+  .bj-selector-options {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 5px 15px;
+    background: @color-white;
+    >span {
+      display: block;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}
+select.bj-select {
+  display: none;
+}
