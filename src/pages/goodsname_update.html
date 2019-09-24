@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "货物品名维护"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <div class="request-block">
+                <div class="block-title">新增货物</div>
+                <form >
+                    <div class="row block-item">
+                        <div class="col-xs-12 col-sm-5">
+                            <div class="block-item-title">
+                                * 货物名称：
+                            </div>
+                        <div class="block-item-content">
+                            <div class="form-group">
+                                <select name="" class="bj-select form-control" id="">
+                                    <option value="">汽油</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="block-item-title">
+                            * 货物性质：
+                        </div>
+                        <div class="block-item-content">
+                            <div class="form-group">
+                                <select name="" class="bj-select form-control" id="">
+                                    <option value="">汽油</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="block-item-title">
+                            * 货物类别：
+                        </div>
+                        <div class="block-item-content">
+                                <div class="form-group">
+                                    <select name="" class="bj-select form-control" id="">
+                                        <option value="">第三类</option>
+                                    </select>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="block-item-title">
+                            货物项类：
+                        </div>
+                        <div class="block-item-content">
+                            <div class="form-group">
+                                <select name="" class="bj-select form-control" id="">
+                                    <option value="">第三类</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="form-group col-xs-12">
+                                <button class="btn btn-primary btn-block">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="request-block all-container">
+                <form >
+                    <div class="row block-item">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="block-item-title">
+                                货物品名
+                            </div>
+                            <div class="block-item-content">
+                                <div class="form-group">
+                                    <select name="" class="bj-select form-control" id="">
+                                        <option value="">汽油</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="block-item-title">
+                                货物类别
+                            </div>
+                            <div class="block-item-content">
+                                <div class="form-group">
+                                    <select name="" class="bj-select form-control" id="">
+                                        <option value="">可选择</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="block-item-title">
+                                货物项类
+                            </div>
+                            <div class="block-item-content">
+                                <div class="form-group">
+                                    <select name="" class="bj-select form-control" id="">
+                                        <option value="">可选择</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="form-group col-xs-12">
+                                <button class="btn btn-primary btn-block">查询</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row block-item">    
+                            <div class="col-xs-4 col-sm-1">
+                                <button class="btn btn-primary btn-block">修改</button>
+                            </div>
+                            <div class="col-xs-4 col-sm-1">
+                                <button class="btn btn-primary btn-block">删除</button>
+                            </div>
+                            <div class="col-xs-4 col-sm-1">
+                                <button class="btn btn-primary btn-block">导出</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="request-block all-container">
+                <div>
+                    <table class="table bj-table">
+                        <thead>
+                            <tr>
+                                <th>选择</th>
+                                <th>货物品名</th>
+                                <th>货物性质</th>
+                                <th>货物类别</th>
+                                <th>货物项类</th>
+                                <th>创建人</th>
+                                <th>创建时间</th>
+                                <th>修改人</th>
+                                <th>修改时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="bj-checkbox">
+                                        <label for="checkbox">
+                                            <input type="checkbox" checked id="checkbox" />
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <td><span>汽油</span></td>
+                                <td><span>危险品货物液体</span></td>
+                                <td><span>第三类</span></td>
+                                <td><span>第一项</span></td> 
+                                <td><span>管理员</span></td>
+                                <td><span>2018-05-08</span></td>
+                                <td><span>管理员</span></td>
+                                <td><span>2019-12-21</span></td> 
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="bj-checkbox">
+                                        <label for="checkbox1">
+                                            <input type="checkbox" id="checkbox1" />
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <td><span>柴油</span></td>
+                                <td><span>危险品货物液体</span></td>
+                                <td><span>第三类</span></td>
+                                <td><span>第一项</span></td> 
+                                <td><span>管理员</span></td>
+                                <td><span>2018-05-08</span></td>
+                                <td><span>管理员</span></td>
+                                <td><span>2019-12-21</span></td> 
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="bj-checkbox">
+                                        <label for="checkbox2">
+                                            <input type="checkbox" id="checkbox2" />
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <td><span>原油</span></td>
+                                <td><span>危险品货物液体</span></td>
+                                <td><span>第三类</span></td>
+                                <td><span>第一项</span></td> 
+                                <td><span>管理员</span></td>
+                                <td><span>2018-05-08</span></td>
+                                <td><span>管理员</span></td>
+                                <td><span>2019-12-21</span></td> 
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="bj-checkbox">
+                                        <label for="checkbox3">
+                                            <input type="checkbox" id="checkbox3" />
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <td><span>天然气</span></td>
+                                <td><span>危险品货物液体</span></td>
+                                <td><span>第三类</span></td>
+                                <td><span>第一项</span></td> 
+                                <td><span>管理员</span></td>
+                                <td><span>2018-05-08</span></td>
+                                <td><span>管理员</span></td>
+                                <td><span>2019-12-21</span></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bj-pagenavgation">
+                    <div class="page-current">
+                        < 第 1 页 共 5 页 >
+                    </div>
+                    <div class="page-pre-number">
+                        每页显示 20 条
+                    </div>
+                    <div class="page-action">
+                        <a href="#" class="disabled">上一页</a>
+                        <a href="#">下一页</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>

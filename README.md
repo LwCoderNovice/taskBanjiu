@@ -13,3 +13,7 @@
   装货榜单 orderloading.html<br/>
   卸货榜单 orderdischarge.html<br/>
   
+### 2019-9-25 
+  货主信息维护 shipper_update.html
+  货主信息 shipper_detail.html
+  货物品名维护 goodsname_update.html

@@ -1,0 +1,54 @@
+table.bj-table {
+    thead {
+        th {
+            text-align: center;
+        }
+    }
+    tbody {
+        padding: 5px 0;
+        .bj-checkbox {
+            span {
+                border-color: @color-grey-darker;
+                background: @color-white;
+            }
+        }
+        th {
+            vertical-align: middle;
+        }
+        td {
+            text-align: center;
+            >span {
+                background: @color-white;
+                border: 1px solid @color-grey;
+                border-radius: @border-radius-sm;
+                display: inline-block;
+                padding: 8px 20px;
+            }
+        }
+    }
+}
+.bj-pagenavgation {
+    display: flex;
+    justify-content: center;
+    color: @color-blue-darker;
+    font-size: 16px;
+    .page-current,
+    .page-pre-number,
+    .page-action {
+        margin: 0 10px;
+    }
+    .page-action {
+        a {
+            + a {
+                margin-left: 10px;
+            }
+            &.disabled {
+                pointer-events: none;
+            }
+
+            &:hover {
+                color: @color-third;
+            }
+        }
+    }
+}
