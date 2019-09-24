@@ -11,11 +11,11 @@ input {
 		font-size: @fsize-default;
 		color: @color-blue-light;
 		background: @color-white;
-		border: none;
+		border: @border-with-mini solid @border-default-color;
 	}
 	&.bj-primary-input {
 		background: @color-grey-light;
-		border: none;
+		border: @border-with-mini solid @border-default-color;
 	}
 	&.border {
 		border: @border-with-mini solid @border-color;
@@ -28,13 +28,6 @@ input {
 			top: 10px;
 			font-style: normal;
 		}
-	}
-}
-select {
-	&.bj-default-select {
-		padding: 10px;
-		height: 40px;
-		border-radius: @border-radius; 
 	}
 }
 .bj-checkbox {

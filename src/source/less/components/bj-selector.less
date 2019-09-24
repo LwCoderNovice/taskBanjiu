@@ -2,6 +2,11 @@
   position: relative;
   .bj-selector-handler {
     position: relative;
+    padding: 10px;
+    height: 40px;
+    border-radius: @border-radius; 
+    text-align: left;
+    border: @border-with-mini solid @border-default-color;
     &::before,
     &::after {
       content: '';
@@ -27,6 +32,7 @@
     width: 100%;
     padding: 5px 15px;
     background: @color-white;
+    text-align: left;
     >span {
       display: block;
       margin: 5px;
