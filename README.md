@@ -17,3 +17,9 @@
   货主信息维护 shipper_update.html
   货主信息 shipper_detail.html
   货物品名维护 goodsname_update.html
+
+### 2019-9-25
+  人员账号添加 account_add.html
+  人员账号修改 account_update.html
+  人员账号管理 account_manage.html
+  
