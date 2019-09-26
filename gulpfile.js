@@ -22,6 +22,8 @@ var JAVASCRIPT_PLUGINS = ['./src/source/plugins/jquery-3.4.1.min.js',
                           './src/source/plugins/bootstrap-3.3.7/dist/js/bootstrap.min.js',
                           './src/source/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
                           './src/source/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js',
+                          './src/source/plugins/colorbox/colorbox-master/jquery.colorbox-min.js',
+                          './src/source/plugins/art-template/template-web.js',
                           './src/source/plugins/bj-selector.js'];
 // function list
 
