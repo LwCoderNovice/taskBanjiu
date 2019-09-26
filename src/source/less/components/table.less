@@ -31,11 +31,50 @@ table.bj-table {
         }
     }
 }
+table.bj-primary-table {
+    max-width: 100%;
+    overflow-x: auto;
+    
+    thead {
+        color: @color-white;
+        padding: 15px;
+        border-radius: @border-radius;
+        tr>th {
+            background: @color-primary;
+            border-bottom: 0;
+            word-break: keep-all;
+            white-space: nowrap;
+            &:first-child {
+                border-bottom-left-radius: @border-radius;
+                border-top-left-radius: @border-radius;
+            }
+            &:last-child {
+                border-bottom-right-radius: @border-radius;
+                border-top-right-radius: @border-radius;
+            }
+        }
+    }
+    tbody {
+        >tr>td,
+        >tr>th {
+            word-break: keep-all;
+            white-space: nowrap;
+            border-top: 0;
+            vertical-align: middle;
+            >span,
+            >a {
+                word-break: keep-all;
+                white-space: nowrap;  
+            }
+        }
+    }
+}
 .bj-pagenavgation {
     display: flex;
     justify-content: center;
     color: @color-blue-darker;
     font-size: 16px;
+    margin-bottom: 10px;
     .page-current,
     .page-pre-number,
     .page-action {
