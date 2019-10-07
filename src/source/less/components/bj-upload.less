@@ -1,0 +1,20 @@
+.bj-upload-block {
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid @border-default-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .bj-message {
+        font-size: 13px;
+        color: @color-third;
+        cursor: pointer;
+    }
+
+    &.dz-started {
+        .bj-message {
+            display: none;
+        }
+    }
+}

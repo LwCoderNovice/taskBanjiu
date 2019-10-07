@@ -123,6 +123,7 @@ gulp.task('watch', function() {
     gulp.watch(['./src/source/less/*.less', './src/source/less/**/*.less'],  gulp.series('less:dev'));
     gulp.watch('./src/source/js/**.js',  gulp.series('js:dev'));
     gulp.watch(['./src/*.html', './src/pages/*.html', './src/_include/*.html'], gulp.series('fileinclude'));
+    gulp.watch(['./src/source/js/define/*.js'], gulp.series('copyDefine'));
 });
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
