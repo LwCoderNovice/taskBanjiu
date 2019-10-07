@@ -24,7 +24,12 @@ var JAVASCRIPT_PLUGINS = ['./src/source/plugins/jquery-3.4.1.min.js',
                           './src/source/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js',
                           './src/source/plugins/colorbox/colorbox-master/jquery.colorbox-min.js',
                           './src/source/plugins/art-template/template-web.js',
-                          './src/source/plugins/bj-selector.js'];
+                          './src/source/plugins/bj-selector.js',
+                          './src/source/plugins/dropzone.js'];
+var JAVASCRIPT_DEFINE = [
+    './src/source/js/define/validate.js',
+    './src/source/js/define/upload.js',
+]
 // function list
 
 // Clean the _ui folder.
@@ -54,6 +59,10 @@ gulp.task('copyFonts', function() {
 gulp.task('copyImages', function() {
     return gulp.src('./src/source/images/**')
     .pipe(gulp.dest('./_ui/images/'))
+})
+gulp.task('copyDefine', function() {
+    return gulp.src(JAVASCRIPT_DEFINE)
+    .pipe(gulp.dest('./_ui/js/'))
 })
 // Compiling less 
 gulp.task('less:dev', function() {
@@ -118,12 +127,12 @@ gulp.task('watch', function() {
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:pro', 'js:plugins', 'js:pro')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyImages', 'less:pro', 'js:plugins', 'js:pro')
     )
 );
 // this the develop envirenments has maps
 gulp.task('dev', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyImages', 'less:dev', 'js:plugins', 'js:dev')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyImages', 'less:dev', 'js:plugins', 'js:dev')
     )
 );
