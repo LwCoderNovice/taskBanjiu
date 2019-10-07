@@ -1,5 +1,5 @@
 SELF.validate = {
-  _auload: [
+  _autoload: [
     'FormValidate'
   ],
 
