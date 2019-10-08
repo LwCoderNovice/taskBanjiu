@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "车辆信息管理"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+                <div class="request-block all-container no-margin">
+                    <form >
+                        <div class="row block-item">
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="block-item-title">
+                                    车牌号
+                                </div>
+                                <div class="block-item-content">
+                                    <div class="form-group">
+                                        <input type="text" class="bj-default-input form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="block-item-title">
+                                    所属公司
+                                </div>
+                                <div class="block-item-content">
+                                    <div class="form-group">
+                                        <input type="text" class="bj-default-input form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row block-item">
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="block-item-title">
+                                    运营状态
+                                </div>
+                                <div class="block-item-content">
+                                    <div class="form-group">
+                                        <select name="" id="" class="bj-select form-control">
+                                            <option value="">正常运营</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="block-item-title">
+                                    车辆品牌
+                                </div>
+                                <div class="block-item-content">
+                                    <div class="form-group">
+                                        <select name="" id="" class="bj-select form-control">
+                                            <option value="">东风</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="form-group col-xs-12">
+                                    <button class="btn btn-primary btn-block">查询</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row actions-group">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+                        <div class="col-xs-3">
+                            <a href="account_add.html" class="btn btn-primary btn-block">添加</a href="account_add.html">
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="account_update.html" class="btn btn-primary btn-block">修改</a href="account_update.html">
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-primary btn-block">删除</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-primary btn-block">导出</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="request-block all-container">
+                    <div>
+                        <table class="table bj-table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>选择</th>
+                                    <th>操作</th>
+                                    <th>车牌号</th>
+                                    <th>运营状态</th>
+                                    <th>所属公司</th>
+                                    <th>车牌品牌</th>
+                                    <th>车架号</th>
+                                    <th>发动机号</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <th>
+                                        <div class="bj-checkbox">
+                                            <label for="checkbox">
+                                                <input type="checkbox" checked="" id="checkbox">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td><a href="#">查看详情</a></td>
+                                    <td>张三</td>
+                                    <td>zhangsan</td>
+                                    <td>正常</td> 
+                                    <td>资料员</td>
+                                    <td>133122212211</td>
+                                    <td>aaaaa@test.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <th>
+                                        <div class="bj-checkbox">
+                                            <label for="checkbox">
+                                                <input type="checkbox" checked="" id="checkbox">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td><a href="#">查看详情</a></td>
+                                    <td>张三</td>
+                                    <td>zhangsan</td>
+                                    <td>正常</td> 
+                                    <td>资料员</td>
+                                    <td>133122212211</td>
+                                    <td>aaaaa@test.com</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <th>
+                                        <div class="bj-checkbox">
+                                            <label for="checkbox">
+                                                <input type="checkbox" checked="" id="checkbox">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td><a href="#">查看详情</a></td>
+                                    <td>张三</td>
+                                    <td>zhangsan</td>
+                                    <td>正常</td> 
+                                    <td>资料员</td>
+                                    <td>133122212211</td>
+                                    <td>aaaaa@test.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bj-pagenavgation">
+                        <div class="page-current">
+                            &lt; 第 1 页 共 5 页 &gt;
+                        </div>
+                        <div class="page-pre-number">
+                            每页显示 20 条
+                        </div>
+                        <div class="page-action">
+                            <a href="#" class="disabled">上一页</a>
+                            <a href="#">下一页</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>
