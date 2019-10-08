@@ -42,7 +42,7 @@
   $('.bj-selector-options').on('click', 'span', function(e) {
     e.preventDefault();
     var value = $(this).data('value');
-    $(this).parents('.bj-selector').prev('.bj-select').val(value);
+    $(this).parents('.bj-selector').prev('.bj-select').val(value).trigger('change');
     $(this).parents('.bj-selector').find('.bj-selector-handler').text($(this).text());
     $(this).parent('.bj-selector-options').hide();
   })

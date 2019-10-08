@@ -117,8 +117,9 @@
                       <div class="row">
                           <div class="col-xs-6">
                             <div class="form-group">
-                                <select name="" class="bj-select form-control" id="">
-                                    <option value="">陕西省</option>
+                                <select name="" class="bj-select form-control" id="selectArea">
+                                    <option value="0">陕西省</option>
+                                    <option value="1">渭南市</option>
                                 </select>
                             </div>
                           </div>
@@ -180,7 +181,11 @@
                   </div>
                   <div class="block-item-content">
                     <div class="form-group">
-                        <input type="file" class="form-control" />
+                        <div class="js-upload-license bj-upload-block">
+                          <span class="bj-message">请上传图片</span>
+                          <input type="file" name="file" class="hidden">
+                          <span class="glyphicon glyphicon-remove-circle remove"></span>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -230,7 +235,11 @@
                   </div>
                   <div class="block-item-content">
                     <div class="form-group">
-                            <input type="file" class="form-control" />
+                      <div class="js-upload-operation bj-upload-block">
+                        <span class="bj-message">请上传图片</span>
+                        <input type="file" name="file" class="hidden">
+                        <span class="glyphicon glyphicon-remove-circle remove"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -312,7 +321,7 @@
                   </div>
                   <div class="block-item-content">
                     <div class="form-group">
-                        <input type="text" class="bj-default-input form-control" value="测试备注" />
+                        <textarea class="bj-default-textarea form-control">测试备注</textarea>
                     </div>
                   </div>
                 </div>

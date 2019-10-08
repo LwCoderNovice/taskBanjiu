@@ -25,3 +25,7 @@
 
 ### 2019-9-26
   需求发布页面 request.html
+
+### 2019-10-8
+  公司信息维护 company_edit.html
+  公司信息查看 company_view.html

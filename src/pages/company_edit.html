@@ -44,8 +44,9 @@
                     承运方类别：
                   </div>
                   <div class="block-item-content">
-                    
-                    <input type="text" class="bj-default-input form-control" value="LGN承运商">
+                    <select name="" id="" class="form-control bj-select">
+                      <option value="">LGN</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -83,8 +84,29 @@
                     企业地址：
                   </div>
                   <div class="block-item-content">
-                    陕西省 西安市
-                    <input type="text" class="bj-default-input form-control" value="预付">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                          <select name="" id="" class="bj-select form-control">
+                            <option value="">陕西省</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="form-group">
+                          <select name="" id="" class="bj-select form-control">
+                            <option value="">西安市</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                          <div class="form-group">
+                              <select name="" id="" class="bj-select form-control">
+                                <option value="">雁塔区</option>
+                              </select>
+                            </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -126,7 +148,11 @@
                     经营许可信息：
                   </div>
                   <div class="block-item-content">
-                      <input type="text" class="bj-default-input form-control" value="预付">
+                    <div class="js-upload-operation bj-upload-block">
+                      <span class="bj-message">请上传图片</span>
+                      <input type="file" name="file" class="hidden">
+                      <span class="glyphicon glyphicon-remove-circle remove"></span>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -160,8 +186,11 @@
                     营业执照信息：
                   </div>
                   <div class="block-item-content">
-                    <img src="" alt="">
-                    <input type="text" class="bj-default-input form-control" value="预付">
+                    <div class="js-upload-license bj-upload-block">
+                      <span class="bj-message">请上传图片</span>
+                      <input type="file" name="file" class="hidden">
+                      <span class="glyphicon glyphicon-remove-circle remove"></span>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -200,6 +229,7 @@
                     <div class="js-upload-way bj-upload-block">
                       <span class="bj-message">请上传图片</span>
                       <input type="file" name="file" class="hidden">
+                      <span class="glyphicon glyphicon-remove-circle remove"></span>
                     </div>
                   </div>
                 </div>
@@ -221,39 +251,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                  <div class="block-item-title">
-                    信用记录信息：
-                  </div>
-                  <div class="block-item-content">
-                    <input type="text" class="bj-default-input form-control" value="该企业信用良好">
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <div class="block-item-title">
-                    诚信评价记录：
-                  </div>
-                  <div class="block-item-content">
-                    <input type="text" class="bj-default-input form-control" value="评价信息">
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <div class="block-item-title">
-                    诚信评价日期：
-                  </div>
-                  <div class="block-item-content">
-                    <input type="text" class="bj-default-input form-control js-assess-date" value="2019-08-08">
-                  </div>
-                </div>
                 <div class="col-xs-12 col-sm-12">
                   <div class="block-item-title">
                     备注：
                   </div>
                   <div class="block-item-content">
-                    <input type="text" class="bj-default-input form-control" value="测试备注">
+                    <textarea class="bj-default-textarea form-control">测试备注</textarea>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="form-action">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-sm-offset-5">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block">修改</button>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
