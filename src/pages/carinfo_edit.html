@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "车辆信息修改"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="request-block">
+              <div class="block-title">基本信息</div>
+              <div class="row block-item">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    * 车牌号
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                        <input type="text" class="bj-default-input form-control" value="车牌号">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    * 车辆类型
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-control">
+                        <option value="">普通货运车</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    * 车分类
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-control">
+                        <option value="">一类车</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    * 运营状态
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-control">
+                        <option value="">正常运营</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="block-item-title">
+                        * 车辆品牌
+                    </div>
+                    <div class="block-item-content">
+                        <div class="form-group">
+                            <select name="" id="" class="bj-select form-control">
+                                <option value="">东风</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      * 燃油类型
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-control">
+                          <option value="">柴油</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      * 货运类型
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <select name="" id="" class="bj-select form-control">
+                            <option value="">集装箱半挂车</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="block-item-title">
+                        自定义车牌
+                    </div>
+                    <div class="block-item-content">
+                        <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="request-block">
+              <div class="block-title">详细信息</div>
+              <div class="row block-item">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    车架编号
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                        <input type="text" class="bj-default-input form-control" >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    发动机编号
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <input type="text" class="bj-default-input form-control" >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    马力
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <input type="text" class="bj-default-input form-control" >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                    底盘编号
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <input type="text" class="bj-default-input form-control" >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="block-item-title">
+                        购买价
+                    </div>
+                    <div class="block-item-content">
+                        <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      购买日期
+                  </div>
+                  <div class="block-item-content">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <input type="text" class="bj-default-input form-control" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      新旧状态
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <select name="" id="" class="bj-select form-control">
+                            <option value="">全新</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="block-item-title">
+                        所属公司
+                    </div>
+                    <div class="block-item-content">
+                        <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      起运日期
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" />
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      停运日期
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" />
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      空车油耗标准
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" />
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="block-item-title">
+                      重车油耗标准
+                  </div>
+                  <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" />
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-action">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-sm-offset-5">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block">修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>

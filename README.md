@@ -30,3 +30,8 @@
   公司信息维护 company_edit.html
   公司信息查看 company_view.html
   人员信息添加/修改 member_edit.html
+
+### 2019-10-10
+  车辆信息管理 carinfo_manage.html
+  车挂信息管理 carbackinfo_manage.html
+  驾驶员信息管理 driver_manage.html
