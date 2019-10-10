@@ -38,6 +38,11 @@ SELF.upload = {
         })
       })
     }
+
+    $('.bj-upload-block').on('click', 'span.bj-message', function(e) {
+      e.preventDefault();
+      $(this).parents('.bj-upload-block').trigger('click');
+    })
   },
 
   bindUploadEvent: function() {
@@ -59,6 +64,10 @@ SELF.upload = {
 
     // 营业执照
     $('div.js-upload-license').dropzone({
+
+    })
+    // 驾驶证
+    $('div.js-upload-driver-sheet').dropzone({
 
     })
   }

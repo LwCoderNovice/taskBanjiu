@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+	<div class="row">
+	  <div class="col-xs-12">
+		@@include('_breadcrumb.html', {
+		  "pagename": "司机信息添加"
+		})
+	  </div>
+	</div>
+  </div>
+  <div class="page-body">
+	<div class="container">
+		<div class="row">
+		  <div class="col-xs-12">
+			<div class="request-block">
+			  <div class="block-title">司机基本信息</div>
+			  <div class="row block-item">
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					* 姓名
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+						<input type="text" class="bj-default-input form-control">
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					性别
+				  </div>
+				  <div class="block-item-content line-checkbox">
+					<div class="form-group">
+						<div class="bj-checkbox ">
+							<label for="gender_male">
+								<input type="radio" checked="checked" name="gender" id="gender_male" />
+								<span></span>
+								男
+							</label>
+						</div>
+						<div class="bj-checkbox">
+							<label for="gender_female">
+								<input type="radio" name="gender" id="gender_female" />
+								<span></span>
+								女
+							</label>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					* 身份证号
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+						<input type="text" class="bj-default-input form-control">
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					* 手机
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+						<input type="text" class="bj-default-input form-control">
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						邮箱
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+							<input type="text" class="bj-default-input form-control">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					地址
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+					  <div class="form-group">
+						<input type="text" class="bj-default-input form-control">
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					  * 所属部门
+				  </div>
+				  <div class="block-item-content">
+					  <div class="form-group">
+						  <select name="" id="" class="bj-select form-control">
+							<option value="">A部门</option>
+						  </select>
+					  </div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						是否内部司机
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+							<select name="" id="" class="bj-select form-control">
+								<option value="">是</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						公众号用户名
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+							<input type="text" class="bj-default-input form-control">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						公众号密码
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+							<input type="text" class="bj-default-input form-control">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						备注
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+							<textarea name="" id="" cols="30" rows="10" class="bj-default-textarea form-control">
+
+							</textarea>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="request-block">
+			  <div class="block-title">驾驶证信息</div>
+			  <div class="row block-item">
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					驾驶证号
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+						<input type="text" class="bj-default-input form-control" >
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					准驾车型
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+					  <select class="bj-select form-control">
+						  <option value="">1轴</option>
+					  </select>
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					初次领证日期
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+					  <input type="text" class="bj-default-input form-control" >
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+				  <div class="block-item-title">
+					驾驶员从业资格证号
+				  </div>
+				  <div class="block-item-content">
+					<div class="form-group">
+					  <input type="text" class="bj-default-input form-control" >
+					</div>
+				  </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="block-item-title">
+						驾驶证有效期
+					</div>
+					<div class="block-item-content">
+						<div class="form-group">
+						  <input type="text" class="bj-default-input form-control" >
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="request-block">
+				<div class="block-title">司机账户信息</div>
+				<div class="row block-item">
+					<div class="col-xs-12 col-sm-6">
+						<div class="block-item-title">
+							银行
+						</div>
+						<div class="block-item-content">
+							<div class="form-group">
+									<select class="bj-select form-control">
+										<option value="">工商银行</option>
+									</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="block-item-title">
+							开户行
+						</div>
+						<div class="block-item-content">
+							<div class="form-group">
+								<input type="text" class="bj-default-input form-control" >
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="block-item-title">
+							银行卡号
+						</div>
+						<div class="block-item-content">
+							<div class="form-group">
+								<input type="text" class="bj-default-input form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="request-block">
+					<div class="block-title">证件照片信息</div>
+					<div class="row block-item">
+						<div class="col-xs-12 col-sm-6">
+							<div class="block-item-title">
+								驾驶证主页
+							</div>
+							<div class="block-item-content">
+								<div class="form-group">
+									<div class="js-upload-driver-sheet bj-upload-block">
+										<span class="bj-message">请上传图片</span>
+										<input type="file" name="file" class="hidden">
+										<span class="glyphicon glyphicon-remove-circle remove"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="block-item-title">
+								驾驶证副页
+							</div>
+							<div class="block-item-content">
+								<div class="form-group">
+									<div class="js-upload-driver-sheet bj-upload-block">
+										<span class="bj-message">请上传图片</span>
+										<input type="file" name="file" class="hidden">
+										<span class="glyphicon glyphicon-remove-circle remove"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="form-action">
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 col-sm-offset-5">
+						<div class="form-group">
+							<button class="btn btn-primary btn-block">修改</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>
