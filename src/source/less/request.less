@@ -75,14 +75,13 @@
         }
     }
     .block-item-title {
-        flex: auto;
+        flex: 0 0 180px;
         text-align: right;
-        margin-right: 10px;
+        margin-right: 20px;
         padding-top: 10px;
     }
     .block-item-content {
-        width: 280px;
-        flex: 0 0 280px;
+        flex: 1;
         > img {
             max-width: 100%;
             background: @color-white;
@@ -98,6 +97,7 @@
             >.form-group {
                 >* {
                     display: inline-block;
+                    margin-left: 15px;
                 }
             }
         }

@@ -29,6 +29,7 @@ var JAVASCRIPT_PLUGINS = ['./src/source/plugins/jquery-3.4.1.min.js',
 var JAVASCRIPT_DEFINE = [
     './src/source/js/define/validate.js',
     './src/source/js/define/upload.js',
+    './src/source/js/define/calendar.js',
 ]
 // function list
 

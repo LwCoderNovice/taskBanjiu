@@ -1,4 +1,7 @@
 // Form ele styles
+.form-group {
+	position: relative;
+}
 
 input {
 	&.bj-default-input ,
@@ -27,19 +30,20 @@ input {
 			font-style: normal;
 		}
 	}
+
+	&.input-text {
+		padding-right: 25px;
+		+ span {
+			position: absolute;
+			right: 15px;
+			font-size: 16px;
+			color: @color-blue-light;
+			top: 10px;
+		}
+	}
 }
 .bj-checkbox {
 	
-	input[type='checkbox'],
-	input[type='radio'] {
-		position: absolute;
-		left: -9999px;
-		&:checked {
-			+ span {
-				background: @color-blue-darker;
-			}
-		}
-	}
 	input[type='checkbox'] {
 		+ span {
 			border: @border-with-mini solid @color-grey-light;
@@ -100,8 +104,38 @@ input {
 		font-weight: inherit;
 		cursor: pointer;
 	}
+	&.primary {
+		input[type='checkbox'],
+		input[type='radio'] {
+			+ span {
+				border-color: @color-white;
+				background: @color-white;
+			}
+		}
+	}
+	
+	input[type='checkbox'],
+	input[type='radio'] {
+		position: absolute;
+		left: -9999px;
+		&:checked {
+			+ span {
+				background: @color-blue-darker;
+			}
+		}
+	}
 }
 .bj-default-textarea {
 	padding: 10px;
 	border-radius: @border-radius;
+}
+
+.range-date {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.date-start,
+	.date-end {
+		flex: 0 0 45%;
+	}
 }

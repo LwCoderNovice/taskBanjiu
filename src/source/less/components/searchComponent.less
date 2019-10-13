@@ -1,7 +1,36 @@
 .search-box {
+  background: @color-grey-light;
+  padding: 20px 15px;
+  border-radius: @border-radius;
+  .search-box-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
   .search-box-line {
     + .search-box-line {
         margin-top: 15px;
     }
+  }
+
+  .search-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    >.search-title {
+      flex: 0 0 auto;
+      font-size: 18px;
+      color: @color-primary;
+      text-align: right;
+      padding-right: 15px;
+    }
+    >.search-content {
+      flex: 0 0 300px;
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .search-action {
+    height: 38px;
   }
 }
