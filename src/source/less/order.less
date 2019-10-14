@@ -60,3 +60,60 @@
         }
     }
 }
+
+.detail-body {
+    .detail-nav {
+        display: flex;
+        padding: 2% 2.9%;
+        background: @color-grey-light;
+        margin-left: -20px;
+        margin-right: -20px;
+        justify-content: space-around;
+        li {
+            border-bottom: 1px solid transparent;
+            a {
+                color: @color-primary;
+                font-size: 18px;
+            }
+            &.active,
+            &:hover {
+                border-color: @color-blue;
+                background: transparent;
+                >a {
+                   color: @color-blue;
+                   border-color: transparent;
+                   background: transparent;
+                }
+            }
+        }
+    }
+    .detail-body {
+        .order-summary {
+            background: transparent;
+        }
+        .list-tree {
+            border: 2px solid @color-grey-light;
+            padding: 15px 20px;
+            .list-tree-item {
+                display: flex;
+                margin-bottom: 15px;
+                .item-right {
+                    margin-left: 30px;
+                    .item-line {
+                        display: flex;
+                        +.item-line  {
+                            margin-top: 15px;
+                        }
+                        span {
+                            margin-right: 20px;
+                            flex: 0 0 160px;
+                            &:last-child {
+                                flex: 0 0 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

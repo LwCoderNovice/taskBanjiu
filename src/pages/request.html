@@ -83,7 +83,7 @@
                   </div>
                 </div>
                 <div class="form-group form-action">
-                  <a href="#" class="link-default"> <span class="glyphicon glyphicon-map-marker"></span> 自动获取</a>
+                  <a href="#" class="link-default js-get-address"> <span class="glyphicon glyphicon-map-marker"></span> 自动获取</a>
                 </div>
               </div>
               <div class="form-line">
@@ -252,6 +252,32 @@
           </div>
         </div>
       </form>
+    </div>
+  </div>
+  <!-- pop up -->
+  <div id="getCurrentAddress">
+    <div class="bj-popup">
+        <div class="pop-title">
+            <div class="pop-title-content">
+              请选择省份
+            </div>
+            <div class="pop-title-others">
+              <div class="input-group">
+                <input type="text" class="form-control bj-default-input" placeholder="请输入您要查找的城市">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+              <div class="pop-close">
+                <button class="btn btn-primary pop-exit js-close-modal">退出</button>
+              </div>
+            </div>
+          </div>
+          <div class="pop-content">
+              <div class="pop-map">
+
+              </div>
+          </div>
     </div>
   </div>
   <!-- template -->

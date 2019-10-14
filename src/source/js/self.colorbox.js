@@ -8,23 +8,17 @@ SELF.colorbox = {
     SELF.bj_popup = {
       config: {
         maxWidth:"100%",
-        opacity:0.7,
         width:"auto",
         overlayClose: false,
         trapFocus: false,
         transition:"none",
-        close:'<span class="glyphicon glyphicon-remove-circle"></span>',
-        title:'<div class="headline"><span class="headline-text">{title}</span></div>',
+        closeButton: false,
         onComplete: function() {
           $.colorbox.resize();
         }
       },
     
-      open: function(title,config){
-        var config = $.extend({},SELF.bj_popup.config,config);
-        if ( typeof config.title === "string" ) {
-          config.title = config.title.replace(/{title}/g,title);
-        } 
+      open: function(config){
         return $.colorbox(config);
       },
     
@@ -41,8 +35,25 @@ SELF.colorbox = {
   bindcolorbox: function() {
     $(document).on('click', '.js-get-address', function(e) {
       e.preventDefault();
-      SELF.bj_popup.open('获取地址', {
+      SELF.bj_popup.open({
+        html: $('#getCurrentAddress').html(),
+        width: '800px',
+        height: '700px'
+      })
+    })
 
+    $(document).on('click', '#colorbox .js-close-modal', function() {
+      SELF.bj_popup.close();
+    })
+
+    // 订单明细弹窗
+    $(document).on('click', '.js-show-detail', function(e) {
+      e.preventDefault();
+      var url = $(this).data('url'); // 请求地址，返回Html片段
+      SELF.bj_popup.open( {
+        url: url,
+        width: '800px',
+        height: '700px'
       })
     })
   }

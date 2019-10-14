@@ -38,3 +38,6 @@
   司机信息添加/修改 driver_edit.html<br/>
   车挂信息添加/修改 carbackinfo_edit.html<br/>
   车辆信息添加/修改 carinfo_edit.html<br/>
+
+### 2019-10-14 
+  运单详情 order_view.html
