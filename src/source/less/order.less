@@ -61,7 +61,7 @@
     }
 }
 
-.detail-body {
+.details-body {
     .detail-nav {
         display: flex;
         padding: 2% 2.9%;
@@ -115,5 +115,43 @@
                 }
             }
         }
+    }
+    .line-checkbox {
+        .bj-checkbox {
+            display: inline-block;
+        }
+    }
+    .pop-body {
+        border: 2px solid @color-grey-light;
+        border-radius: @border-radius;
+        min-height: 300px;
+    }
+    .pop-video-body {
+        border: 2px solid @color-grey-light;
+        border-radius: @border-radius;
+        margin-bottom: 10px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            display: flex;
+            flex: 0 0 20%;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            span {
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: @color-primary;
+            }
+            video {
+                width: 180px;
+                height: 120px;
+                background: @color-grey-min;
+                border-radius: @border-radius;
+            }
+        }
+
     }
 }
