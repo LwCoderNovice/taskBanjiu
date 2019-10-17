@@ -41,3 +41,16 @@
 
 ### 2019-10-14 
   运单详情 order_view.html
+
+
+## Select reload 
+```
+$(obj).bjSelect.reload($(obj))
+
+```
+
+实例：
+```
+$('a').apped('<option />').bjSelect.reload($('a'))
+
+```

@@ -1,6 +1,7 @@
 SELF.common = {
   _autoload: [
-    'bindNav'
+    'bindNav',
+    'bindSelect'
   ],
 
   bindNav: function() {
@@ -8,6 +9,12 @@ SELF.common = {
       $(this).find('.sub-menu').show();
     }, function() {
       $(this).find('.sub-menu').hide();
+    })
+  },
+  bindSelect: function() {
+    var _selectorArray = $('select.bj-select');
+    $.each(_selectorArray, function(idx, val) {
+      $(val).bjSelect();
     })
   }
 }

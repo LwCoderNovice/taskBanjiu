@@ -31,9 +31,25 @@ table.bj-table {
         }
     }
 }
-table.bj-primary-table {
+table {
     max-width: 100%;
     overflow-x: auto;
+    thead {
+        tr>th {
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+    }
+    tbody {
+        >tr>td,
+        >tr>th  {
+            word-break: keep-all;
+            white-space: nowrap; 
+        }
+    }
+}
+table.bj-primary-table {
+    
     
     thead {
         color: @color-white;
