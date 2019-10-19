@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "运单监控"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+              <div class="dashboard">
+                <div class="dashboard-control">
+                  <div class="control-header">
+                    运单监控
+                  </div>
+                  <div class="control-action">
+                    <div class="bj-checkbox">
+                      <label for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <span></span>
+                        自动更新
+                      </label>
+                    </div>
+                    <a href="#">查询运单</a>
+                  </div>
+                </div>
+                <div class="dashboard-card">
+                  <div class="card-item">
+                    <div class="item-title">
+                      全部
+                    </div>
+                    <div class="item-main">
+                      <div class="item-total">
+                        60
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="item-title">
+                      待派车
+                    </div>
+                    <div class="item-main">
+                      <div class="item-action">
+                        <a href="#">派车</a>
+                      </div>
+                      <div class="item-total">
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="item-title">
+                      待装货
+                    </div>
+                    <div class="item-main">
+                      <div class="item-total">
+                        20
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="item-title">
+                      配送中
+                    </div>
+                    <div class="item-main">
+                      <div class="item-total">
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="item-title">
+                      已完成
+                    </div>
+                    <div class="item-main">
+                      <div class="item-total">
+                        20
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-item">
+                <div class="item-info">
+                  <div class="info-status">
+                    <span class="label label-danger">待派车</span>
+                  </div>
+                  <div class="info-detail">
+                    <div class="detail-info">
+                      <span>车牌号</span>
+                      <span>陕A55212</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>主驾</span>
+                      <span>小张</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>电话 </span>
+                      <span>18799542213</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>发车时间</span>
+                      <span>2019/03/21</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-progress space-section">
+                    <div class="pregress-bar">
+                        <div class="progress-icon">
+                          <div class="progress-item">
+                            <span>装</span>
+                          </div>
+                          <div class="progress-item">
+                            <span>卸</span>
+                          </div>
+                        </div>
+                        <div class="progress-pin">
+                          <div class="progress-item">
+                            西安
+                          </div>
+                          <div class="progress-item">
+                            宁夏
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="item-view">
+                  <a href="#" class="btn btn-primary">查看详情</a>
+                </div>
+              </div>
+
+              <div class="dashboard-item">
+                <div class="item-info">
+                  <div class="info-status">
+                    <span class="label label-warning">待装货</span>
+                  </div>
+                  <div class="info-detail">
+                    <div class="detail-info">
+                      <span>车牌号</span>
+                      <span>陕A55212</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>主驾</span>
+                      <span>小张</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>电话 </span>
+                      <span>18799542213</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>发车时间</span>
+                      <span>2019/03/21</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-progress space-section">
+                    <div class="pregress-bar">
+                        <div class="progress-icon">
+                          <div class="progress-item active">
+                            <span>装</span>
+                          </div>
+                          <div class="progress-item">
+                            <span>卸</span>
+                          </div>
+                        </div>
+                        <div class="progress-pin">
+                          <div class="progress-item">
+                            西安
+                          </div>
+                          <div class="progress-item">
+                            宁夏
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="item-view">
+                  <a href="#" class="btn btn-primary">查看详情</a>
+                </div>
+              </div>
+
+              <div class="dashboard-item">
+                <div class="item-info">
+                  <div class="info-status">
+                    <span class="label label-primary">配送中</span>
+                  </div>
+                  <div class="info-detail">
+                    <div class="detail-info">
+                      <span>车牌号</span>
+                      <span>陕A55212</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>主驾</span>
+                      <span>小张</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>电话 </span>
+                      <span>18799542213</span>
+                    </div>
+                    <div class="detail-info">
+                      <span>发车时间</span>
+                      <span>2019/03/21</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-progress space-section">
+                    <div class="pregress-bar">
+                        <div class="progress-icon">
+                          <div class="progress-item active">
+                            <span>装</span>
+                          </div>
+                          <div class="progress-item">
+                            <span>卸</span>
+                          </div>
+                        </div>
+                        <div class="progress-pin">
+                          <div class="progress-item">
+                            西安
+                          </div>
+                          <div class="progress-item">
+                            宁夏
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="item-view">
+                  <a href="#" class="btn btn-primary">查看详情</a>
+                </div>
+              </div>
+              <div class="dashboard-item">
+                  <div class="item-info">
+                    <div class="info-status">
+                      <span class="label label-info">已完成</span>
+                    </div>
+                    <div class="info-detail">
+                      <div class="detail-info">
+                        <span>车牌号</span>
+                        <span>陕A55212</span>
+                      </div>
+                      <div class="detail-info">
+                        <span>主驾</span>
+                        <span>小张</span>
+                      </div>
+                      <div class="detail-info">
+                        <span>电话 </span>
+                        <span>18799542213</span>
+                      </div>
+                      <div class="detail-info">
+                        <span>发车时间</span>
+                        <span>2019/03/21</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-progress space-section">
+                      <div class="pregress-bar">
+                          <div class="progress-icon">
+                            <div class="progress-item active">
+                              <span>装</span>
+                            </div>
+                            <div class="progress-item">
+                              <span>卸</span>
+                            </div>
+                          </div>
+                          <div class="progress-pin">
+                            <div class="progress-item">
+                              西安
+                            </div>
+                            <div class="progress-item">
+                              宁夏
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="item-view">
+                    <a href="#" class="btn btn-primary">查看详情</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>

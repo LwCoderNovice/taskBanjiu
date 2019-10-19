@@ -8,7 +8,7 @@
   }
   .search-box-line {
     + .search-box-line {
-        margin-top: 15px;
+        margin-top: 20px;
     }
   }
 
@@ -27,6 +27,31 @@
       flex: 0 0 300px;
       .form-group {
         margin-bottom: 0;
+      }
+      .tag-select {
+        width: 400px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 16px;
+        a {
+          display: block;
+          padding: 5px 10px;
+          &.active {
+            border-radius: 8px;
+            border: 1px solid @color-blue;
+            color: @color-blue;
+          }
+        }
+      }
+      .show-more {
+        display: inline-block;
+        margin-top: 10px;
+        color: @color-blue;
       }
     }
   }

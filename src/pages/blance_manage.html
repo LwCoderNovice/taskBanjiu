@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "结算管理"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+                <div class="search-box">
+									<form >
+                    <div class="row search-box-line">
+                        <div class="col-xs-12 col-sm-5">
+                          <div class="search-group">
+                            <div class="search-title">
+                              支付状态
+                            </div>
+                            <div class="search-content">
+                              <div class="tag-select">
+                                <a href="#" class="active">全部</a>
+                                <a href="#">待审核</a>
+                                <a href="#">已审核</a>
+                                <a href="#">审核不通过</a>
+                                <a href="#">已支付</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+										<div class="row search-box-line">
+											<div class="col-xs-12 col-sm-5">
+                        <div class="search-group">
+                          <div class="search-title">
+                            运单号
+                          </div>
+                          <div class="search-content">
+                            <div class="form-group">
+                              <input type="text" class="bj-default-input form-control" />
+                            </div>
+                          </div>
+                        </div>
+											</div>
+											<div class="col-xs-12 col-sm-5">
+                        <div class="search-group">
+                          <div class="search-title">
+                            车牌号
+                          </div>
+                          <div class="search-content">
+                              <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                              </div>
+                          </div>
+                        </div>
+											</div>
+                    </div>
+                    <div class="row search-box-line">
+											<div class="col-xs-12 col-sm-5">
+                        <div class="search-group">
+                          <div class="search-title">
+                            主驾
+                          </div>
+                          <div class="search-content">
+                            <div class="form-group">
+                              <input type="text" class="bj-default-input form-control" />
+                            </div>
+                          </div>
+                        </div>
+											</div>
+											<div class="col-xs-12 col-sm-5">
+                        <div class="search-group">
+                          <div class="search-title">
+                            托运方
+                          </div>
+                          <div class="search-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                          </div>
+                        </div>
+											</div>
+										</div>
+										<div class="row search-box-line">
+											<div class="col-xs-12 col-sm-5">
+												<div class="search-group">
+													<div class="search-title">
+														装货时间
+													</div>
+													<div class="search-content">
+														<div class="form-group">
+                              <div class="form-group range-date bj-range-date">
+                                <div class="date-start">
+                                  <input type="text" class="bj-default-input form-control">
+                                </div>
+                                <div class="split">
+                                  至
+                                </div>		
+                                <div class="date-end">
+                                  <input type="text" class="bj-default-input form-control">
+                                </div>
+                              </div>														
+                            </div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-5">
+                        <div class="search-group">
+                          <div class="search-title">
+                          </div>
+                          <div class="search-content">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <button class="btn btn-primary btn-block">查询</button>
+                              </div>
+                              <div class="col-xs-6">
+                                <a href="#" class="show-more">展开更多>></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+											</div>
+										</div>
+									</form>
+								</div>
+                <div class="row actions-group">
+                    <div class="col-xs-12 col-sm-1 col-sm-offset-10">
+                      <button class="btn btn-primary btn-block">支付</button>
+                    </div>
+                </div>
+                <div class="request-block all-container">
+                    <div class="content-x-scroll all-block">
+                        <table class="table  bj-table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>选择</th>
+                                    <th>操作</th>
+                                    <th>帐单编号</th>
+                                    <th>运单号</th>
+                                    <th>确认时间</th>
+                                    <th>车辆</th>
+                                    <th>托运方</th>
+                                    <th>支付状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <th>
+                                        <div class="bj-checkbox">
+                                            <label for="checkbox">
+                                                <input type="checkbox" checked="" id="checkbox">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td><a href="#">账单明细</a></td>
+                                    <td>DZ12121</td>
+                                    <td>QS221222211</td>
+                                    <td>2019/9/21</td> 
+                                    <td>陕A2212d</td>
+                                    <td>测试公司</td>
+                                    <td>待审核</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bj-pagenavgation">
+                        <div class="page-current">
+                            &lt; 第 1 页 共 5 页 &gt;
+                        </div>
+                        <div class="page-pre-number">
+                            每页显示 20 条
+                        </div>
+                        <div class="page-action">
+                            <a href="#" class="disabled">上一页</a>
+                            <a href="#">下一页</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>

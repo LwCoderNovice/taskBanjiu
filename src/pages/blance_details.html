@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "结算明细"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+            <div class="request-block all-container">
+                <div class="content-x-scroll all-block">
+                    <table class="table  bj-table">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>选择</th>
+                                <th>操作</th>
+                                <th>账单编号</th>
+                                <th>运单号</th>
+                                <th>所属公司</th>
+                                <th>车辆</th>
+                                <th>托运方</th>
+                                <th>支付状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <th>
+                                    <div class="bj-checkbox">
+                                        <label for="checkbox">
+                                            <input type="checkbox" checked="" id="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <td><a href="#">运单明细</a></td>
+                                <td>DZ45454</td>
+                                <td>QS221222211</td>
+                                <td>测试公司1</td> 
+                                <td>陕A2212d</td>
+                                <td>测试公司</td>
+                                <td>待审核</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bj-pagenavgation">
+                    <div class="page-current">
+                        &lt; 第 1 页 共 5 页 &gt;
+                    </div>
+                    <div class="page-pre-number">
+                        每页显示 20 条
+                    </div>
+                    <div class="page-action">
+                        <a href="#" class="disabled">上一页</a>
+                        <a href="#">下一页</a>
+                    </div>
+                </div>
+            </div>
+            <form>
+              <div class="request-block small">
+                <div class="block-title">运单明细</div>
+                <div class="row block-item">
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="block-item-title">
+                      收款人
+                    </div>
+                    <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="block-item-title">
+                      开户行
+                    </div>
+                    <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="block-item-title">
+                      开户行
+                    </div>
+                    <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="block-item-title">
+                      运费合计
+                    </div>
+                    <div class="block-item-content">
+                      <div class="form-group">
+                          <input type="text" class="bj-default-input form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                      <div class="block-item-title">
+                          其他费用
+                      </div>
+                      <div class="block-item-content">
+                          <div class="form-group">
+                              <select name="" id="" class="bj-select form-control">
+                                  <option value="">东风</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="block-item-title">
+                        其他费用
+                    </div>
+                    <div class="block-item-content">
+                      <div class="form-group">
+                        <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" value="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="block-item-title">
+                        备注
+                    </div>
+                    <div class="block-item-content">
+                        <div class="form-group">
+                            <textarea name="" id="" class="bj-default-textarea form-control">
+
+                            </textarea>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-action">
+                <div class="row">
+                  <div class="col-xs-4 col-xs-2 col-sm-2 col-sm-offset-4">
+                    <div class="form-group">
+                      <button class="btn btn-primary btn-block">修改</button>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-xs-2 col-sm-2">
+                    <div class="form-group">
+                      <button class="btn btn-default btn-block">返回</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>

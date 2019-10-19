@@ -155,3 +155,190 @@
 
     }
 }
+
+.shipper-section {
+    display: flex;
+    .shipper-status-main {
+        flex: auto;
+    }
+    .shipper-status-action {
+        margin-left: 40px;
+        flex: 0 0 24%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: @color-primary;
+        font-size: 18px;
+        border-left: 2px solid #d8d8d8;
+    }
+}
+.shipper-status-main {
+  .status {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 85%;
+      .status-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 0 0 85px;
+          span {
+              &:first-child {
+                  font-weight: 600;
+              }
+          }
+      } 
+  } 
+}
+
+.shipper-form {
+    padding: 1.9% 1.6%;
+    .form-line {
+        display: flex;
+        align-items: center;
+        color: @color-primary;
+        font-size: 18px;
+        margin-bottom: 1%;
+        &:first-child {
+            margin-bottom: 2%;
+        }
+        &:last-child {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 0;
+        }
+        .form-label {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            span {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .form-line-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1.6%;
+            font-size: 16px;
+            span {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+            .form-group {
+                max-width: 150px;
+                min-width: 140px;
+            }
+        }
+        &.action {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.dashboard {
+    .dashboard-control {
+        display: flex;
+        justify-content: space-between;
+        .control-header {
+            font-size: 16px;
+            color: @color-primary;
+            padding: 10px;
+        }
+        .control-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .dashboard-card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .card-item {
+            flex: 0 0 18%;
+            box-shadow: 0 6px 15px 0 rgba(16,33,49,0.20);
+            border-radius: @border-radius;
+            padding: 15px;
+            .item-title {
+                font-size: 24px;
+                color: #898989;
+                margin-bottom: 10px;
+            }
+            .item-main {
+                text-align: right;
+                font-size: 20px;
+                .item-action {
+                    float: left;
+                    color: @color-blue;
+                    font-size: 16px;
+                }
+                .item-total {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.2%;
+    .item-info {
+        flex: 0 0 230px;
+        background: #EFF8FF;
+        box-shadow: 0 6px 15px 0 rgba(16,33,49,0.20);
+        border-radius: @border-radius;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .item-progress {
+        display: flex;
+        align-items: center;
+        margin: 0 1%;
+        flex: auto;
+    }
+    .item-view {
+        display: flex;
+        align-items: center;
+    }
+    .info-status {
+        margin-bottom: 15px;
+        .label-danger {
+            background: #EF5D5D;
+            border-radius: @border-radius;
+        }
+        .label-warning {
+            background: #FF9D51;
+            border-radius: @border-radius;
+        }
+        .label-primary {
+            background: #9BA1EE;
+            border-radius: @border-radius;
+        }
+        .label-info {
+            background: #9BCAEE;
+            border-radius: @border-radius;
+        }
+    }
+    .info-detail {
+        color: @color-primary;
+        .detail-info {
+            margin-bottom: 5px;
+            span {
+                display: inline-block;
+                &:first-child {
+                    text-align: right;
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

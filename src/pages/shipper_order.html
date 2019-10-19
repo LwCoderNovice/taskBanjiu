@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('_meta.html')
+</head>
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "承运方运单分配"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12">
+              <div class="search-box">
+                <form >
+                  <div class="row search-box-line">
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="search-group">
+                        <div class="search-title">
+                          指派时间
+                        </div>
+                        <div class="search-content">
+                          <div class="form-group range-date bj-range-date">
+                            <div class="date-start">
+                              <input type="text" class="bj-default-input form-control">
+                            </div>
+                            <div class="split">
+                              至
+                            </div>		
+                            <div class="date-end">
+                              <input type="text" class="bj-default-input form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                    </div>
+                  </div>
+                  <div class="row search-box-line">
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="search-group">
+                        <div class="search-title">
+                          订单状态
+                        </div>
+                        <div class="search-content">
+                          <div class="form-group">
+                            <select name="" id="" class="bj-select form-control">
+                              <option value="0">全部</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="search-group">
+                        <div class="search-title">
+                          发货人
+                        </div>
+                        <div class="search-content">
+                          <div class="form-group">
+                            <input type="text" class="bj-default-input form-control js-common-calendar" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <div class="search-group">
+                          <button class="btn btn-primary btn-block search-action">查询</button>
+                        </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="space-section shipper-section">
+                <div class="shipper-status-main">
+                  <div class="status">
+                    <div class="status-item">
+                      <span>订单状态</span>
+                      <span>已派车</span>
+                    </div>
+                    <div class="status-item">
+                      <span>货物类型</span>
+                      <span>柴油</span>
+                    </div>
+                    <div class="status-item">
+                      <span>物品质量</span>
+                      <span>100吨</span>
+                    </div>
+                    <div class="status-item">
+                      <span>发货时间</span>
+                      <span>2019-08-12</span>
+                    </div>
+                  </div>
+                  <div class="pregress-bar">
+                    <div class="progress-icon">
+                      <div class="progress-item">
+                        <span>装</span>
+                      </div>
+                      <div class="progress-item">
+                        <span>装</span>
+                      </div>
+                      <div class="progress-item">
+                        <span>装</span>
+                      </div>
+                      <div class="progress-item">
+                        <span>卸</span>
+                      </div>
+                    </div>
+                    <div class="progress-pin">
+                      <div class="progress-item">
+                        西安
+                      </div>
+                      <div class="progress-item">
+                        天水
+                      </div>
+                      <div class="progress-item">
+                        平凉
+                      </div>
+                      <div class="progress-item">
+                        宁夏
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shipper-status-action">
+                  <span>
+                    车牌号：陕A12345
+                  </span>
+                  <span>
+                    重新派车
+                  </span>
+                  <button class="btn btn-primary">查看详情</button>
+                </div>
+              </div>
+              <div class="space-section shipper-section">
+                <div class="shipper-status-main">
+                  <div class="status">
+                    <div class="status-item">
+                      <span>订单状态</span>
+                      <span>未派车</span>
+                    </div>
+                    <div class="status-item">
+                      <span>货物类型</span>
+                      <span>柴油</span>
+                    </div>
+                    <div class="status-item">
+                      <span>物品质量</span>
+                      <span>100吨</span>
+                    </div>
+                    <div class="status-item">
+                      <span>发货时间</span>
+                      <span>2019-08-12</span>
+                    </div>
+                  </div>
+                  <div class="pregress-bar">
+                    <div class="progress-icon">
+                      <div class="progress-item">
+                        <span>装</span>
+                      </div>
+                      <div class="progress-item">
+                        <span>卸</span>
+                      </div>
+                    </div>
+                    <div class="progress-pin">
+                      <div class="progress-item">
+                        西安
+                      </div>
+                      <div class="progress-item">
+                        宁夏
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shipper-status-action">
+                  <span>
+                    接单
+                  </span>
+                  <span>
+                    派车
+                  </span>
+                </div>
+              </div>
+              <div class="space-section-primary shipper-form margin-bottom">
+                <div class="form-line">
+                  <div class="form-label">
+                    <span>体积：</span>
+                    <span>22m<sup>2</sup></span>
+                  </div>
+                  <div class="form-label">
+                    <span>发货人：</span>
+                    <span>小张</span>
+                  </div>
+                  <div class="form-label">
+                    <span>发货人手机：</span>
+                    <span>13755565584</span>
+                  </div>
+                  <div class="form-label">
+                    <span>派车数量</span>
+                    <span>
+                      <div class="form-group">
+                        <input type="text" class="bj-input-default form-control" />
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-line">
+                  <div class="form-line-item">
+                    <span>车辆</span>
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-group ">
+                        <option value="1">陕A54221</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-line-item">
+                    <span>车挂号</span>
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-group ">
+                        <option value="1">陕A54221挂</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-line-item">
+                    <span>司机</span>
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-group ">
+                        <option value="1">小张</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-line-item">
+                    <span>押运员</span>
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-group ">
+                        <option value="1">测试1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-line-item">
+                    <span>预装量</span>
+                    <div class="form-group">
+                      <select name="" id="" class="bj-select form-group ">
+                        <option value="1">20</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-line action">
+                  <div class="col-xs-6 col-sm-1">
+                      <button class="btn btn-primary btn-block">保存</button>
+                  </div>
+                  <div class="col-xs-6 col-sm-1">
+                      <button class="btn btn-default btn-block">返回</button>
+                  </div>
+                </div>
+              </div>
+              <div class="space-section-primary shipper-form margin-bottom">
+                  <div class="form-line">
+                    <div class="form-label">
+                      <span>体积：</span>
+                      <span>22m<sup>2</sup></span>
+                    </div>
+                    <div class="form-label">
+                      <span>发货人：</span>
+                      <span>小张</span>
+                    </div>
+                    <div class="form-label">
+                      <span>发货人手机：</span>
+                      <span>13755565584</span>
+                    </div>
+                    <div class="form-label">
+                      <span>派车数量</span>
+                      <span>
+                        <div class="form-group">
+                          <input type="text" class="bj-input-default form-control" />
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="form-line-item">
+                      <span>车辆</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>车挂号</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221挂</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>司机</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">小张</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>押运员</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">测试1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>预装量</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">20</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="form-line-item">
+                      <span>车辆</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>车挂号</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221挂</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>司机</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">小张</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>押运员</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">测试1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>预装量</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">20</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="form-line-item">
+                      <span>车辆</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>车挂号</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">陕A54221挂</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>司机</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">小张</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>押运员</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">测试1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-line-item">
+                      <span>预装量</span>
+                      <div class="form-group">
+                        <select name="" id="" class="bj-select form-group ">
+                          <option value="1">20</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-line action">
+                    <div class="col-xs-6 col-sm-1">
+                        <button class="btn btn-primary btn-block">保存</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-1">
+                        <button class="btn btn-default btn-block">返回</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>
