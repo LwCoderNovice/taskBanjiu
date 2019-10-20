@@ -34,5 +34,14 @@ SELF.calendar = {
                 })
             })
         }
+        // has time 
+        var $ele = $('.js-common-time');
+        if($ele.length > 0) {
+            $.each($ele, function(idx, val) {
+                $(val).datepicker({
+                    format: 'yyyy-mm-dd',
+                })
+            })
+        }
     }
 }

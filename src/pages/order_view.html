@@ -177,6 +177,733 @@
         </div>
     </div>
   </div>
+  <div id="showDetail" class="hide">
+    <div class="bj-popup">
+        <div class="pop-title">
+        <div class="pop-title-content">
+            运单明细
+        </div>
+        <div class="pop-title-others">
+            <div class="pop-close">
+            <button class="btn btn-primary pop-exit js-close-modal">退出</button>
+            </div>
+        </div>
+        </div>
+        <div class="pop-content">
+        <div class="order-popup-detail">
+            <div class="details-body">
+            <ul class="nav nav-tabs detail-nav" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#orderDetail" id="orderDetail-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">运单详情</a>
+                </li>
+                <li role="presentation" >
+                    <a href="#shipmentTop" role="tab" id="shipmentTop-tab" data-toggle="tab" aria-controls="shipmentTop" aria-expanded="false">装货榜单</a>
+                </li>
+                <li>
+                    <a href="#discharge" role="tab" id="discharge-tab" data-toggle="tab" aria-controls="discharge" aria-expanded="false">卸货榜单</a>
+                </li>
+                <li>
+                    <a href="#recomment" role="tab" id="recomment-tab" data-toggle="tab" aria-controls="recomment" aria-expanded="false">评价信息</a>
+                </li>
+                <li>
+                    <a href="#payinfo" role="tab" id="payinfo-tab" data-toggle="tab" aria-controls="payinfo" aria-expanded="false">支付信息</a>
+                </li>
+                <li>
+                    <a href="#contract" role="tab" id="contract-tab" data-toggle="tab" aria-controls="contract" aria-expanded="false">运输合同</a>
+                </li>
+                <li>
+                    <a href="#historyLine" role="tab" id="historyLine-tab" data-toggle="tab" aria-controls="historyLine" aria-expanded="false">历史轨迹</a>
+                </li>
+                <li>
+                    <a href="#video" role="tab" id="video-tab" data-toggle="tab" aria-controls="video" aria-expanded="false">视频信息</a>
+                </li>
+                <li>
+                    <a href="#history" role="tab" id="history-tab" data-toggle="tab" aria-controls="history" aria-expanded="false">操作历史</a>
+                </li>
+            </ul>
+            <div class="tab-content detail-body" id="myTabContent"> 
+                <div class="tab-pane fade active in" role="tabpanel" id="orderDetail" aria-labelledby="orderDetail-tab">
+                <div class="pop-body">
+                    <div class="shipper-details">
+                    <div class="form-section">
+                        <div class="row">
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            运单号
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            承运商
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            货物名称
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            装货地
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            装货时间
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="js-common-time bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            装货量
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            卸货地
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            卸货时间
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="js-common-time bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            卸货量
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="row">
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            车牌号
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            车挂号
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            车辆类型
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            驾驶员
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            押运员
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            联系方式
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            计价方式
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <select class="bj-select form-control">
+                                <option value="">吨运价</option>
+                                </select>                            
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            运输单价
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            结算量
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="bj-default-input form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            运输总价
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="has-unit bj-default-input form-control" />                         
+                                <i>元</i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            预付款
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="has-unit bj-default-input form-control" />                         
+                                <i>元</i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            扣款
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="has-unit bj-default-input form-control" />                         
+                                <i>元</i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            其他费用
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="has-unit bj-default-input form-control" />                         
+                                <i>元</i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="shipper-detail-label">
+                            结算总价
+                            </div>
+                            <div class="shipper-detail-content">
+                            <div class="form-group">
+                                <input type="text" class="has-unit bj-default-input form-control" />                         
+                                <i>元</i>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-section-header">
+                        司机上传信息
+                    </div>
+                    </div>
+                    <div class="shipper-info">
+                    <div class="info-item">
+                        发车时间：2019-08-08 12：20
+                    </div>
+                    <div class="info-item">
+                        装货时间：2019-08-08 12：20
+                    </div>
+                    <div class="info-item">
+                        卸货时间：2019-08-08 12：20
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="shipmentTop" aria-labelledby="shipmentTop-tab">
+                    <div class="order-summary">
+                        <div class="summary-item summary-line">
+                            <span>上传时间：</span>
+                            <span>2019-08-06 11:45</span>
+                        </div>
+                        <div class="summary-item summary-line">
+                            <span>上传人：</span>
+                            <span>测试管理员</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pop-body">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="discharge" aria-labelledby="discharge-tab">
+                    <div class="order-summary">
+                        <div class="summary-item summary-line">
+                            <span>上传时间：</span>
+                            <span>2019-08-06 11:45</span>
+                        </div>
+                        <div class="summary-item summary-line">
+                            <span>上传人：</span>
+                            <span>测试管理员</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pop-body">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="recomment" aria-labelledby="recomment-tab">
+                    <div class="order-summary">
+                        <div class="summary-item summary-line">
+                            <span>评价时间：</span>
+                            <span>2019-08-06 11:45</span>
+                        </div>
+                        <div class="summary-item summary-line">
+                            <span>评价人：</span>
+                            <span>测试评价员</span>
+                        </div>
+                    </div>
+                    <div class="pop-body clearfix">
+                    <div class="pop-body-comment row">
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                重大事故次数
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                企业投诉评价
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                送货守时
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                按时上报
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                货损货差
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                服务态度
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                按时上传磅单
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                按时到达情况
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                其他情况
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                        <div class="pop-form-item">
+                            <div class="form-titile">
+                                描述
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="bj-default-input form-control" />
+                            </div>
+                        </div>
+                        </div>
+                    </div>  
+                    </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="payinfo" aria-labelledby="payinfo-tab">
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="contract" aria-labelledby="contract-tab">
+                    <div class="order-summary">
+                        <div class="summary-item summary-line">
+                            <span>上传时间：</span>
+                            <span>2019-08-06 11:45</span>
+                        </div>
+                        <div class="summary-item summary-line">
+                            <span>上传人：</span>
+                            <span>测试管理员</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pop-body">
+
+                    </div>
+                </div> 
+                <div class="tab-pane fade" role="tabpanel" id="historyLine" aria-labelledby="historyLine-tab">
+                    <div class="order-summary">
+                        <div class="summary-item">
+                        <span>司机：</span>
+                        <span>小连</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>联系方式：</span>
+                        <span>18555555555</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>车牌号：</span>
+                        <span>宁A65095</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>车辆类型：</span>
+                        <span>危险品运输车</span>
+                        </div>
+                    </div>
+                    <div class="block-item-content line-checkbox">
+                    <span class="glyphicon glyphicon-map-marker"></span> GPS
+                    </div>
+                    <div class="pop-body">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="video" aria-labelledby="video-tab">
+                    <div class="order-summary">
+                    <div class="summary-item">
+                        <span>司机：</span>
+                        <span>小连</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>联系方式：</span>
+                        <span>18555555555</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>车牌号：</span>
+                        <span>宁A65095</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>车辆类型：</span>
+                        <span>危险品运输车</span>
+                    </div>
+                    </div>
+                    <div class="block-item-content line-checkbox">
+                    <div class="form-group">
+                        <div class="bj-checkbox">
+                        <label for="gender_male">
+                            <input type="radio" checked="checked" name="gender" id="gender_male" />
+                            <span></span>
+                            视频监控
+                        </label>
+                        </div>
+                        <div class="bj-checkbox">
+                        <label for="gender_female">
+                            <input type="radio" name="gender" id="gender_female" />
+                            <span></span>
+                            主动安全
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pop-video-body">
+                    <ul>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                        <li>
+                        <span>视频监控</span>
+                        <video src="">
+
+                        </video>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="history" aria-labelledby="history-tab">
+                    
+                    <div class="order-summary">
+                        <div class="summary-item">
+                        <span>司机：</span>
+                        <span>小连</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>联系方式：</span>
+                        <span>18555555555</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>车牌号：</span>
+                        <span>宁A65095</span>
+                        </div>
+                        <div class="summary-item">
+                        <span>车辆类型：</span>
+                        <span>危险品运输车</span>
+                        </div>
+                    </div>
+                    <div class="list-tree">
+                    <div class="list-tree-item">
+                        <div class="item-left">
+                        2019-8-10
+                        </div>
+                        <div class="item-right">
+                            <div class="item-line">
+                            <span>11:30</span>
+                            <span>小张</span>
+                            <span>【发布需求】</span>
+                            <span>发布需求</span>
+                            </div>
+                            <div class="item-line">
+                            <span>11:30</span>
+                            <span>管理员</span>
+                            <span>【需求审核】</span>
+                            <span>审核需求，运量1000吨，吨/运价100元，货损率5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-tree-item">
+                        <div class="item-left">
+                            2019-8-10
+                        </div>
+                        <div class="item-right">
+                            <div class="item-line">
+                                <span>11:30</span>
+                                <span>小张</span>
+                                <span>【发布需求】</span>
+                                <span>发布需求</span>
+                            </div>
+                            <div class="item-line">
+                                <span>11:30</span>
+                                <span>管理员</span>
+                                <span>【需求审核】</span>
+                                <span>审核需求，运量1000吨，吨/运价100元，货损率5%</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
   @@include('_footer.html')
 </body>
 </html>

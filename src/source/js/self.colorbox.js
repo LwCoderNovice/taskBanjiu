@@ -49,11 +49,19 @@ SELF.colorbox = {
     // 订单明细弹窗
     $(document).on('click', '.js-show-detail', function(e) {
       e.preventDefault();
-      var url = $(this).data('url'); // 请求地址，返回Html片段
+      var $html = $('#showDetail').html();
+      $('#showDetail').html('') // 请求地址，返回Html片段 TODO
       SELF.bj_popup.open( {
-        url: url,
-        width: '800px',
-        height: '700px'
+        html: $html,
+        className: 'special-pop',
+        width: '1200px',
+        height: '700px',
+        onComplete: function() {
+          SELF.calendar.bindSpecialCalendar();
+        },
+        onClose: function($html) {
+          $('#showDetail').html($html);
+        }
       })
     })
   }

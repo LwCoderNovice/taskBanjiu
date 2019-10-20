@@ -1,12 +1,11 @@
 .order-summary {
     background: @color-grey-light;
     border-radius: @border-radius;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     font-size: 16px;
     color: @color-default;
-    padding: 30px;
+    padding:  0 30px 20px;
     .summary-item {
         margin-right: 40px;
         &.summary-line {
@@ -66,14 +65,12 @@
         display: flex;
         padding: 2% 2.9%;
         background: @color-grey-light;
-        margin-left: -20px;
-        margin-right: -20px;
         justify-content: space-around;
         li {
             border-bottom: 1px solid transparent;
             a {
                 color: @color-primary;
-                font-size: 18px;
+                font-size: 16px;
             }
             &.active,
             &:hover {
@@ -94,6 +91,7 @@
         .list-tree {
             border: 2px solid @color-grey-light;
             padding: 15px 20px;
+            border-radius: @border-radius;
             .list-tree-item {
                 display: flex;
                 margin-bottom: 15px;
@@ -125,6 +123,24 @@
         border: 2px solid @color-grey-light;
         border-radius: @border-radius;
         min-height: 300px;
+        .pop-body-comment {
+            margin: 0 -30px;
+            padding: 30px;
+            background: #f2f2f3;
+            .pop-form-item {
+                display: flex;
+                align-items: center;
+                .form-titile {
+                    margin-bottom: 15px;
+                    flex: 0 0 100px;
+                    text-align: right;
+                    margin-right: 15px;
+                }
+                .form-group {
+                    flex: auto;
+                }
+            }
+        }
     }
     .pop-video-body {
         border: 2px solid @color-grey-light;
@@ -242,6 +258,45 @@
     }
 }
 
+.shipper-details {
+    padding-top: 20px;
+    background: #f2f2f3;
+    .form-section {
+        padding: 20px;
+        border-top: 1px solid #dcdcdc;
+        &:first-child {
+            border-top: 0;
+        }
+        .col-xs-4 {
+            display: flex;
+            align-items: center;
+            .shipper-detail-label {
+                flex: 0 0 80px;
+                margin-bottom: 15px;
+                text-align: right;
+                margin-right: 10px;
+            }
+            .shipper-detail-content {
+                flex: auto;
+            }
+        }
+    }
+    .form-section-header {
+        padding: 10px 25px;
+        font-size: 20px;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+}
+
+.shipper-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    padding-top: 20px;
+    color: @color-primary;
+}
+
 .dashboard {
     .dashboard-control {
         display: flex;
@@ -340,5 +395,30 @@
                 }
             }
         }
+    }
+}
+
+.special-pop {
+    #cboxContent {
+        padding: 20px 0;
+        .detail-body {
+            margin-top: 30px;
+            max-height: 750px;
+            overflow-y: auto;
+        }
+        .tab-pane {
+            padding: 0 30px;
+        }
+    }
+    .pop-title {
+        padding: 10px 25px;
+        border-bottom: 0;
+
+    }
+}
+
+#recomment {
+    .pop-body {
+        border: 0;
     }
 }
