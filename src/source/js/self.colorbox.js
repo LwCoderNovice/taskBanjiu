@@ -49,10 +49,9 @@ SELF.colorbox = {
     // 订单明细弹窗
     $(document).on('click', '.js-show-detail', function(e) {
       e.preventDefault();
-      var $html = $('#showDetail').html();
-      $('#showDetail').html('') // 请求地址，返回Html片段 TODO
+      var $url = ''; // 请求地址  返回html 为#showDetail中的所有html
       SELF.bj_popup.open( {
-        html: $html,
+        url: $url,
         className: 'special-pop',
         width: '1200px',
         height: '700px',
