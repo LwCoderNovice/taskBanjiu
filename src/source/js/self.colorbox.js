@@ -49,9 +49,9 @@ SELF.colorbox = {
     // 订单明细弹窗
     $(document).on('click', '.js-show-detail', function(e) {
       e.preventDefault();
-      var $url = ''; // 请求地址  返回html 为#showDetail中的所有html
+      var $url = 'baidu.com'; // 请求地址  返回html 为#showDetail中的所有html
       SELF.bj_popup.open( {
-        url: $url,
+        href: $url,
         className: 'special-pop',
         width: '1200px',
         height: '700px',
