@@ -22,6 +22,7 @@ var JAVASCRIPT_PLUGINS = ['./src/source/plugins/jquery-3.4.1.min.js',
                           './src/source/plugins/bootstrap-3.3.7/dist/js/bootstrap.min.js',
                           './src/source/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
                           './src/source/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js',
+                          './src/source/plugins/jquery-ui-1.12.1.autocomplete/jquery-ui.min.js',
                           './src/source/plugins/colorbox/colorbox-master/jquery.colorbox-min.js',
                           './src/source/plugins/art-template/template-web.js',
                           './src/source/plugins/bj-selector.js',
@@ -30,6 +31,7 @@ var JAVASCRIPT_DEFINE = [
     './src/source/js/define/validate.js',
     './src/source/js/define/upload.js',
     './src/source/js/define/calendar.js',
+    './src/source/js/define/autocomplete.js'
 ]
 // function list
 
