@@ -1,19 +1,35 @@
 SELF.autocomplete = {
 
   _autoload: [
-    'verifyConfig'
+    'bindAutoCompleteInput'
   ],
-
-  verifyConfig: function() {
-    jQuery.autocomplete.setDefaults({
-      _renderItem: function() {
-        // reset ui
-      }
-    })
-  },
   bindAutoCompleteInput: function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
     $('.bj-autocomplete').autocomplete({
-      
+      source: availableTags
     })
   }
 }
