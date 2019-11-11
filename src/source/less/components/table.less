@@ -85,6 +85,39 @@ table.bj-primary-table {
         }
     }
 }
+table.bj-default-table {
+    margin-top: 20px;
+    thead {
+        padding: 15px;
+        border-radius: @border-radius;
+        >tr {
+            >th {
+                border-bottom: 0;
+                text-align: center;
+                background: @color-grey-light;
+                padding: 2% 5%;
+                &:first-child {
+                    border-top-left-radius: @border-radius;
+                    border-bottom-left-radius: @border-radius;
+                }
+                &:last-child {
+                    border-top-right-radius: @border-radius;
+                    border-bottom-right-radius: @border-radius;
+                }
+            }
+        }
+    }
+    tbody {
+        >tr {
+            >td {
+                border-top: 0;
+                border-bottom: 2px solid #dddddd;
+                padding: 2% 5%;
+                text-align: center;
+            }
+        }
+    }
+}
 .bj-pagenavgation {
     display: flex;
     justify-content: center;

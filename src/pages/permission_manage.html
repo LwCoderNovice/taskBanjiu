@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('_meta.html')
+<body>
+  @@include('_header.html')
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        @@include('_breadcrumb.html', {
+          "pagename": "权限管理"
+        })
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="search-box">
+            <form action="">
+              <div class="row search-box-line">
+                <div class="col-xs-12 col-sm-5">
+                  <div class="search-group">
+                    <div class="search-title">
+                      角色名称
+                    </div>
+                    <div class="search-content">
+                      <div class="form-group">
+                        <input type="text" class="bj-default-input form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                      <button class="btn btn-primary btn-block">查询</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                      <button class="btn btn-primary btn-block js-permission-add">新增</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="default-block">
+            <table class="table bj-default-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>角色名称</th>
+                  <th>职责描述</th>
+                  <th>创建时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>王小刚</td>
+                  <td>管理员</td>
+                  <td>2019-10-30 21:20</td>
+                  <td>
+                    <a href="#" class="link-default js-permission-edit">修改</a>
+                    <a href="#" class="link-default js-permission-remove">删除</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('_footer.html')
+</body>
+</html>
