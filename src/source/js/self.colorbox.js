@@ -51,7 +51,7 @@ SELF.colorbox = {
       e.preventDefault();
       var $url = 'baidu.com'; // 请求地址  返回html 为#showDetail中的所有html
       SELF.bj_popup.open( {
-        href: $url,
+        html: $('#showDetail').html(),
         className: 'special-pop',
         width: '1200px',
         height: '700px',
@@ -61,6 +61,14 @@ SELF.colorbox = {
         onClose: function($html) {
           $('#showDetail').html($html);
         }
+      })
+    })
+    // 权限管理
+    $(document).on('click', '.js-permission-edit', function(e) {
+      e.preventDefault();
+      SELF.bj_popup.open({
+        html: $('#editPermission').html(),
+        width: '800px'
       })
     })
   }
