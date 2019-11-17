@@ -67,7 +67,24 @@ SELF.colorbox = {
     $(document).on('click', '.js-permission-edit', function(e) {
       e.preventDefault();
       SELF.bj_popup.open({
-        html: $('#editPermission').html(),
+        href: 'permission_edit.html',
+        className: 'space-popup',
+        width: '800px'
+      })
+    })
+    $(document).on('click', '.js-permission-add', function(e) {
+      e.preventDefault();
+      SELF.bj_popup.open({
+        href: 'permission_add.html',
+        className: 'space-popup',
+        width: '800px'
+      })
+    })
+    $(document).on('click', '.js-permission-remove', function(e) {
+      e.preventDefault();
+      SELF.bj_popup.open({
+        href: 'permission_remove.html',
+        className: 'space-popup',
         width: '800px'
       })
     })
