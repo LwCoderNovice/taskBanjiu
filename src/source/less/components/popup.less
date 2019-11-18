@@ -37,7 +37,11 @@
     color: @color-primary;
     font-size: 16px;
   }
-  input {
+  input,
+  textarea {
+    border-color: @color-grey;
+  }
+  .bj-selector-handler {
     border-color: @color-grey;
   }
 }
@@ -76,6 +80,73 @@
         color: @color-primary;
         font-size: 22px;
       }
+    }
+  }
+}
+
+.popup-form {
+  width: 100%;
+  .popup-form-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .form-line-item {
+      display: flex;
+      align-items: center;
+      .item-label {
+        flex: 0 0 80px;
+        text-align: right;
+      }
+      .item-body {
+        margin-left: 10px;
+        flex: auto;
+        input,
+        div {
+          width: 100%;
+        }
+        .item-multiple-upload {
+          min-height: 100px;
+          background: @color-white;
+          position: relative;
+          .action-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+        &.multiple-field {
+          display: flex;
+          input,
+          div {
+            width: auto;
+          }
+          .multiple-field-first {
+            width: 60%;
+          }
+          .multiple-field-second,
+          .bj-selector {
+            width: 35%;
+            margin-left: 5%;
+            >.multiple-field-second {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &.all-row {
+        flex: 0 0 100%;
+      }
+    }
+  }
+  .form-actions {
+    padding: 20px 0;
+  }
+
+  &.three-items {
+    .form-line-item {
+      flex: 0 0 33%;
     }
   }
 }

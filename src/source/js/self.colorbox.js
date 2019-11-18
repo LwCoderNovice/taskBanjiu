@@ -88,5 +88,18 @@ SELF.colorbox = {
         width: '800px'
       })
     })
+    // 合同管理
+    $(document).on('click', '.js-contract-add', function(e) {
+      e.preventDefault();
+      SELF.bj_popup.open({
+        href: 'contract_add.html',
+        className: 'space-popup',
+        width: '800px',
+        onComplete: function() {
+          $('.bj-select').bjSelect();
+          SELF.upload.bindUploadEvent();
+        }
+      })
+    })
   }
 }
