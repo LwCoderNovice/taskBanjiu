@@ -41,6 +41,23 @@
       cursor: pointer;
     }
   }
+  .bj-selector-label {
+    margin-right: 8px;
+  }
+  select.bj-select2-seletor {
+    height: 34px;
+    min-width: 100px;
+    + .select2-container {
+      height: 34px;
+      .selection {
+        height: 34px;
+        * {
+          height: 34px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
 }
 select.bj-select {
   display: none;

@@ -70,5 +70,11 @@ SELF.upload = {
     $('div.js-upload-driver-sheet').dropzone({
 
     })
+
+    // 多图片
+    $('div.js-upload-multiple-example').dropzone({
+      uploadMultiple: true,
+      clickable: false
+    })
   }
 }

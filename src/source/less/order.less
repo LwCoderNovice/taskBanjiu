@@ -338,6 +338,14 @@
                     align-self: flex-end;
                 }
             }
+
+            &.active {
+                background: @color-blue;
+                color: @color-white;
+                .item-title {
+                    color: inherit;
+                }
+            }
         }
     }
 }
@@ -392,6 +400,7 @@
                 &:first-child {
                     text-align: right;
                     width: 30%;
+                    margin-right: 6px;
                 }
             }
         }

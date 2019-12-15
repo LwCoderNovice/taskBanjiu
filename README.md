@@ -54,3 +54,12 @@ $(obj).bjSelect.reload($(obj))
 $('a').apped('<option />').bjSelect.reload($('a'))
 
 ```
+
+## Select2 说明
+componentExample.html  79行
+代码详细说明
+
+## 运单监控 card 状态
+
+.card-item 添加 active 样式，为活动，选择中的card
+shipper_order_view.html 38行
