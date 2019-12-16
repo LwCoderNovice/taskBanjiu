@@ -47,22 +47,25 @@ SELF.colorbox = {
     })
 
     // 订单明细弹窗
-    $(document).on('click', '.js-show-detail', function(e) {
-      e.preventDefault();
-      var $url = 'baidu.com'; // 请求地址  返回html 为#showDetail中的所有html
-      SELF.bj_popup.open( {
-        html: $('#showDetail').html(),
-        className: 'special-pop',
-        width: '1200px',
-        height: '700px',
-        onComplete: function() {
-          SELF.calendar.bindSpecialCalendar();
-        },
-        onClose: function($html) {
-          $('#showDetail').html($html);
-        }
-      })
-    })
+    $(document).on('click', '.js-show-detail', function(e) {
+      e.preventDefault();
+      //var $url = 'baidu.com'; // 请求地址  返回html 为#showDetail中的所有html
+      //var $url ='Shipper/Requirement/RequirementDetailPartial';// 'baidu.com'; // 请求地址  返回html 为#showDetail中的所有html
+      var id=$(e.target).parents('tr').find("td.idclass").html();
+      var $url = '/Shipper/Requirement/RequirementDetailPartial/'+id; // 请求地址  返回html 为#showDetail中的所有html
+      SELF.bj_popup.open( {
+        href: $url,
+        className: 'special-pop',
+        width: '1200px',
+        height: '700px',
+        onComplete: function() {
+          SELF.calendar.bindSpecialCalendar();
+        },
+        onClose: function($html) {
+          $('#showDetail').html($html);
+        }
+      })
+    })
     // 权限管理
     $(document).on('click', '.js-permission-edit', function(e) {
       e.preventDefault();
