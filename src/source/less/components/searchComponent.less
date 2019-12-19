@@ -59,3 +59,44 @@
     height: 38px;
   }
 }
+
+.search-form {
+  background: @color-grey-light;
+  padding: 20px 15px;
+  border-radius: @border-radius;
+  .search-form-line {
+    display: flex;
+    margin-bottom: 10px;
+    .search-group {
+      display: flex;
+      align-items: center;
+      .search-title {
+        width: 80px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      .search-content {
+        .form-group {
+          position: relative;
+          margin-bottom: 0;
+        }
+        .error {
+          color: @color-error;
+          position: absolute;
+          left: 0;
+          top: 3px;
+        }
+      }
+    }  
+  }
+  .search-actions {
+    width: 100%;
+    text-align: right;
+    .search-actions-item {
+      min-width: 100px;
+      >button {
+
+      }
+    }
+  }
+}
