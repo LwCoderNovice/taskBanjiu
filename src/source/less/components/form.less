@@ -146,3 +146,17 @@ input {
 		flex: 0 0 45%;
 	}
 }
+
+form {
+	.form-validate {
+		position: relative;
+		>label {
+			&.form-error {
+				position: absolute;
+				left: 0;
+				bottom: -25px;
+    			font-size: 12px;
+			}
+		}
+	}
+}
