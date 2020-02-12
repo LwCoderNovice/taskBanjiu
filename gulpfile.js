@@ -69,6 +69,10 @@ gulp.task('copyDefine', function() {
     return gulp.src(JAVASCRIPT_DEFINE)
     .pipe(gulp.dest('./_ui/js/'))
 })
+gulp.task('copyData', function() {
+    return gulp.src('./src/source/mockdata/**')
+    .pipe(gulp.dest('./_ui/data/'))
+})
 // Compiling less 
 gulp.task('less:dev', function() {
     return gulp.src('./src/source/less/style.less')
@@ -133,12 +137,12 @@ gulp.task('watch', function() {
 // this the produce envirenments not maps and minify files
 gulp.task('default', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyImages', 'less:pro', 'js:plugins', 'js:pro')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyData', 'copyImages', 'less:pro', 'js:plugins', 'js:pro')
     )
 );
 // this the develop envirenments has maps
 gulp.task('dev', 
     gulp.series('clean', 
-        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyImages', 'less:dev', 'js:plugins', 'js:dev')
+        gulp.parallel('fileinclude', 'copyFonts', 'copyDefine', 'copyData', 'copyImages', 'less:dev', 'js:plugins', 'js:dev')
     )
 );

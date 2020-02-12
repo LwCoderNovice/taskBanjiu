@@ -1,7 +1,8 @@
 SELF.action = {
     _autoload: [
         'addNewShipperAddress',
-        'removerNewBlock'
+        'removerNewBlock',
+        'ajaxSelect2Demo'
     ],
 
     addNewShipperAddress: function() {
@@ -23,5 +24,34 @@ SELF.action = {
             e.preventDefault();
             $(this).parents('.request-block').remove();
         })
+    },
+
+    ajaxSelect2Demo: function() {
+        // select2单选ajax异步加载数据
+          // url: ajax 请求地址 返回json
+          // data: 请求参数 json 格式 return
+          // processResults: 返回结果处理
+          // minimumInputLength 触发请求需要的输入数
+          $('#select2_ajax').select2({
+            placeholder: '-----单选-----',
+            ajax: {
+                url: "data/ajax_data.json",
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        search: params.term,
+                        site: "https://ops-coffee.cn"
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: data.message
+                    };
+                },
+                cache: true
+            },
+            minimumInputLength: 2
+        });
     }
 }
